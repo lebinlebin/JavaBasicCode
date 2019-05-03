@@ -3,7 +3,7 @@ package Java.lebin.Training.JavaSort.sort.unstable;
 /**
  * 堆排序
  * 
- * @author shkstart 2013-11-27
+ * @author liulebin 2013-11-27
  */
 public class HeapSort {
 	public static void heapSort(int[] data) {

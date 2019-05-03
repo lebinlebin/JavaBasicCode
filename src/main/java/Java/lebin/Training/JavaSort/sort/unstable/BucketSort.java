@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 桶式排序
  * 
- * @author shkstart 2013-11-27
+ * @author liulebin 2013-11-27
  */
 public class BucketSort {
 	public static void bucketSort(int[] data, int min, int max) {

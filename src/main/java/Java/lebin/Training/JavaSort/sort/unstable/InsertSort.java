@@ -3,7 +3,7 @@ package Java.lebin.Training.JavaSort.sort.unstable;
 /**
  * 直接插入排序
  * 
- * @author shkstart 2013-11-27
+ * @author liulebin 2013-11-27
  */
 public class InsertSort {
 	public static void insertSort(int[] data) {

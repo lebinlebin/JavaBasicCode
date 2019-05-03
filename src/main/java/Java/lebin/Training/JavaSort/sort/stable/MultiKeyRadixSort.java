@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 基数排序
  * 
- * @author shkstart 2013-11-27
+ * @author liulebin 2013-11-27
  */
 public class MultiKeyRadixSort {
 	public static void radixSort(int[] data, int radix, int d) {

@@ -2,7 +2,7 @@ package Java.lebin.Training.JavaSort.sort.stable;
 
 /**
  * 冒泡排序
- * @author shkstart
+ * @author liulebin
  * 2013-11-27
  */
 public class BubbleSort {

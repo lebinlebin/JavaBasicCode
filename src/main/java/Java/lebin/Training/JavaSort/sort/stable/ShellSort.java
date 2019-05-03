@@ -1,7 +1,7 @@
 package Java.lebin.Training.JavaSort.sort.stable;
 /**
  * Shell排序
- * @author shkstart
+ * @author liulebin
  * 2013-11-27
  */
 

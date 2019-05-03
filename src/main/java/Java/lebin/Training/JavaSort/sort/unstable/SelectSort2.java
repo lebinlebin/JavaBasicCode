@@ -2,7 +2,7 @@ package Java.lebin.Training.JavaSort.sort.unstable;
 
 /**
  * 直接选择排序-改进
- * @author shkstart
+ * @author liulebin
  * 2013-11-27
  */
 public class SelectSort2 {
