@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.demo2;
+package Java.lebin.Training.Thread.ThreadMethod;
 /**
  * 此类用于演示线程的常见方法四：
  * @author liyuting
