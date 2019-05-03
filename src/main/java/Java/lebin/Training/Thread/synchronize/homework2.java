@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.homework2;
+package Java.lebin.Training.Thread.synchronize;
 
 //1.打印1——100，通过两个线程，实现一一交替
 public class homework2 {

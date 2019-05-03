@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.homework2;
+package Java.lebin.Training.Thread.synchronize;
 /**
  * 此类用于演示线程的停止
  * @author liyuting

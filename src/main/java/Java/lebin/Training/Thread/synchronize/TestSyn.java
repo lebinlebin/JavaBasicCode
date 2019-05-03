@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.homework2;
+package Java.lebin.Training.Thread.synchronize;
 /**
  * 有2个账户分别向同一个卡上取钱（10000），每次都取1000
 

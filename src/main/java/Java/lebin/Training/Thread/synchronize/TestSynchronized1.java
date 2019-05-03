@@ -1,7 +1,7 @@
-package Java.lebin.Training.Thread.homework2;
+package Java.lebin.Training.Thread.synchronize;
 /**
  * 此类用于演示线程的同步问题
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestSynchronized1 {
@@ -35,9 +35,7 @@ class SellTicket2 implements Runnable{
 		public void run() {
 			while(loop){
 				sellTicket();
-					
 			}
-			
 		}
 		private synchronized void sellTicket() {
 			if (tickets <= 0) {
@@ -62,7 +60,7 @@ class SellTicket implements Runnable{
 		@Override
 		public void run() {
 			while(true){
-				
+				// 普通同步方法，锁对象：this
 				synchronized (this) {
 					if (tickets <= 0) {
 						System.out.println("票已经售完！");
