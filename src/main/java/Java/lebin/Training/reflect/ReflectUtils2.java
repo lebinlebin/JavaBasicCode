@@ -7,7 +7,7 @@ import java.lang.reflect.Type;
 
 /**
  * 此类用于演示获取类中的其他结构：包、父类、接口、泛型、注解
- * @author liyuting
+ * @author liulebin
  * 
  * 相关API：
  * Class类
@@ -17,20 +17,12 @@ import java.lang.reflect.Type;
  * 		getGenericSuperClass():获取父类的泛型
  * 		getGenericInterfaces():获取接口的泛型
  * 		getAnnotations():获取注解
- * 
- * 
- * 
- * Thread类的包、父类、接口、注解
- * 		
- * 
- * 
- * }
- * 
  *
+ * Thread类的包、父类、接口、注解
  */
 public class ReflectUtils2 {
 	public static void main(String[] args) throws Exception {
-		Class c = Class.forName("com.atguigu.bean.Student");
+		Class c = Class.forName("Java.lebin.Training.reflect.Student");
 //		printPackage(c);
 //		printSuperClass(c);
 		printAnnotation(c);

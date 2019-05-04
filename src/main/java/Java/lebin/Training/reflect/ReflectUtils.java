@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 /**
  * 此类用于演示通过反射获取类中的 三大主要成员：属性、方法、构造器
- * @author liyuting
+ * @author liulebin
  * Class类
  * 		getFields()
  * 		getDeclaredFields()
@@ -38,11 +38,11 @@ import java.lang.reflect.Modifier;
 public class ReflectUtils {
 
 	public static void main(String[] args) throws Exception {
-		Class c = Class.forName("com.atguigu.bean.Student");
+		Class c = Class.forName("Java.lebin.Training.reflect.Student");
 		
 //		printFields(c);
-//		printMethods(c);
-		printConstructors(c);
+		printMethods(c);
+//		printConstructors(c);
 	}
 	
 	/**
@@ -110,7 +110,7 @@ public class ReflectUtils {
 	}
 	
 	/**
-	 * 功能：通过反射打印所有 的方法
+	 * 功能：通过反射打印所有的方法
 	 * @param c
 	 */
 	public static void printMethods(Class c){
@@ -131,10 +131,10 @@ public class ReflectUtils {
 			
 			Class[] parameterTypes = method.getParameterTypes();
 			StringBuilder builder = new StringBuilder("(");
-			for(int i=0;i<parameterTypes.length;i++){
+			for(int i=0; i<parameterTypes.length; i++){
 				String simpleName = parameterTypes[i].getSimpleName();
 				builder.append(simpleName);
-				if(i==parameterTypes.length-1)
+				if(i == parameterTypes.length-1)
 					continue;
 				builder.append(',');
 				

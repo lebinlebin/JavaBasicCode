@@ -10,8 +10,6 @@ import org.junit.Test;
  * 
  * 此类用于演示通过反射访问属性和方法
  * 
- * 
- * 
  * Class：
  * 		getField(String name):根据属性名获取属性对象(只能获取public修饰的，包含父类继承来的)
  * 		getDeclaredField(String name):根据属性名获取属性对象（可以获取本类定义的所有的，不问修饰符）
@@ -105,7 +103,7 @@ public class AccessMembers {
 		field.setAccessible(true);
 		
 		//3.为属性赋值
-//		field.set(null, "北京大学");
+		field.set(null, "北京大学");
 		
 		//4.访问属性
 		
