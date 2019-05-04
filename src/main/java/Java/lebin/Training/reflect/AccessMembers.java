@@ -36,7 +36,6 @@ public class AccessMembers {
 	@Before
 	public void before() throws ClassNotFoundException{
 		 c = Class.forName("com.atguigu.bean.Student");
-	
 	}
 	
 	
