@@ -27,10 +27,9 @@ public class Student extends Person<Character> implements Fly<String>,Swim<Integ
 	protected double score;
 	public int id;
 	public static final  String SCHOOL="尚硅谷大学";
+	public static   String SCHOOL2="尚硅谷大学";
 
 	public String getName() {
-
-
 		int  i;
 		return name;
 	}

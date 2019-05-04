@@ -33,7 +33,7 @@ public class AccessMembers {
 	Class c;
 	@Before
 	public void before() throws ClassNotFoundException{
-		 c = Class.forName("com.atguigu.bean.Student");
+		 c = Class.forName("Java.lebin.Training.reflect.Student");
 	}
 	
 	
@@ -54,12 +54,10 @@ public class AccessMembers {
 		method.setAccessible(true);
 		
 		//2.创建对象
+		Object obj = c.newInstance();
 		
-//		Object obj = c.newInstance();
 		
-		
-		//3.调用方法
-		
+		//3.调用方法★
 		Object returnValue = method.invoke(null);
 		System.out.println("返回值："+returnValue);
 	}
@@ -74,7 +72,7 @@ public class AccessMembers {
 //		Field filed = c.getField(name);  //只能获取public修饰的属性，包含从父类继承来的，不限于直接父类
 		Field field = c.getDeclaredField("name");
 		
-		
+		//私有的属性只能在本类中使用，这里必须爆破一下
 		field.setAccessible(true);
 		
 		//2.获取对应类的对象
@@ -90,23 +88,23 @@ public class AccessMembers {
 		
 		//-----------------------练习------------------
 		System.out.println(field.get(c.newInstance()));
-
+		//出来的就是空，新的对象
 	}
 	
 	//访问静态属性
 	@Test
 	public void exec1() throws Exception {
 		//1.根据属性名获取属性对象
-		Field field = c.getDeclaredField("SCHOOL");
+		Field field = c.getDeclaredField("SCHOOL2");
 		
 		//2.暴破
 		field.setAccessible(true);
-		
-		//3.为属性赋值
+
+
+		//3.为属性赋值  这里不用在创建对象
 		field.set(null, "北京大学");
 		
-		//4.访问属性
-		
+		//4.访问属性  final 只能访问，不能赋值
 		System.out.println(field.get(null));
 		
 
