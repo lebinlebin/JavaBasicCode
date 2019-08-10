@@ -1,7 +1,7 @@
 package Java.lebin.Training.sort;
 /**
  * 折半插入排序
- * @author shkstart
+ * @author liulebin
  * 2013-11-27
  */
 
