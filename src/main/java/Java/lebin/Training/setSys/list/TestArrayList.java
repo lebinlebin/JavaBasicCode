@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * 此类用于演示ArrayList的底层结构和源码分析
- * @author liyuting
+ * @author liulebin
  *
  */
 @SuppressWarnings({"rawtypes","unchecked"})

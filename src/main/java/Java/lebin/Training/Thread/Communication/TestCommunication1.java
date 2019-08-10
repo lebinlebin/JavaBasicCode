@@ -4,7 +4,7 @@ import javax.swing.plaf.synth.SynthColorChooserUI;
 
 /**
  * 此类用于演示线程的通信
- * @author liyuting
+ * @author liulebin
  * 
  * 案例：一个生产者和一个消费者
  * 

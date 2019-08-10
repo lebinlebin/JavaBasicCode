@@ -69,7 +69,7 @@ public class ReflectUtils2 {
 		System.out.println(genericT.getSimpleName());
 		
 	}
-	//获取接口的泛型   [作业]
+	//获取接口的泛型 todo:测试
 		public static void printGenericInterfaces(Class c){
 			Type[] genericInterfaces = c.getGenericInterfaces();
 			

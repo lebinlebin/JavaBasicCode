@@ -50,6 +50,10 @@ public class TestCollectionRemove {
 		Iterator iterator = col.iterator();
 		
 		while(iterator.hasNext()){
+			/**
+			 *  Object next = iterator.next();
+			 *  这样编译类型为Object 需要进行强转换为Book才能获取对应的属性值
+			 */
 			Book next = (Book) iterator.next();
 				//演示：添加
 //				col.add(new Book("笑傲江湖",100,"金庸"));

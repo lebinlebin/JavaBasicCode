@@ -15,8 +15,6 @@ import org.junit.Test;
  * 		getDeclaredField(String name):根据属性名获取属性对象（可以获取本类定义的所有的，不问修饰符）
  * 		getMethod(String name,Class...class):根据方法名和参数列表获取方法对象(只能获取public修饰的，包含父类继承来的)
  * 		getDeclaredMethod(String name,Class...class):根据方法名和参数列表获取方法对象（可以获取本类定义的所有的，不问修饰符）
- * 
- * 
  * Field：
  * 
  * 		set(对象，新值)
@@ -58,7 +56,10 @@ public class AccessMembers {
 		
 		
 		//3.调用方法★
-		Object returnValue = method.invoke(null);
+		Object returnValue = method.invoke(obj);
+
+//		Object returnValue = method.invoke(null);//调用静态方法不用新建obj
+
 		System.out.println("返回值："+returnValue);
 	}
 	

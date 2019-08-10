@@ -14,10 +14,8 @@ import java.util.Collection;
  */
 public class TestCollectionbasic {
 
-	
 	public static void main(String[] args) {
 		//1.创建Collection接口对象
-		
 		Collection col = new ArrayList();
 		//2.调用常见方法
 		//方法1：add

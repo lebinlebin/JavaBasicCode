@@ -61,6 +61,7 @@ public class TestCollection3 {
 	public void test2() {
 		//3.遍历集合
 		for(Object o: col){
+			System.out.println(">>>>>>>>>>>>>>>>>>>><<<<<<<<<<<");
 			System.out.println(o);
 		}
 	}
