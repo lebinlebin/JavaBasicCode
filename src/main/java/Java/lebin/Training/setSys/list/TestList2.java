@@ -9,7 +9,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示List接口的遍历方式
- * @author liyuting
+ * @author liulebin
  * 
  * 案例：
  * 使用List的实现类添加三本图书，并遍历，打印如下效果

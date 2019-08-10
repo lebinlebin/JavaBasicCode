@@ -7,7 +7,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示List接口的特点和特有方法
- * @author liyuting
+ * @author liulebin
  * add(object)增
  * remove(index)按指定索引删
  * set(index,object)改
@@ -41,7 +41,8 @@ public class TestList1 {
 		System.out.println(list);
 		//特有方法2：remove(index) 删除
 		/*
-		 * 细节：如果元素类型为整型，如果删除的实参为int类型，默认是按索引删除；如果想按指定元素删除，则需要装箱再删除！
+		 * 细节：如果元素类型为整型，如果删除的实参为int类型，默认是按索引删除；
+		 * 如果想按指定元素删除，则需要装箱再删除！
 		 */
 		list.remove(2);
 		
@@ -74,6 +75,10 @@ public class TestList1 {
 		list.add(200);
 		list.add(300);
 		System.out.println(list);
+		/*
+		 * 细节：如果元素类型为整型，如果删除的实参为int类型，默认是按索引删除；
+		 * 如果想按指定元素删除，则需要装箱再删除！
+		 */
 		list.remove(new Integer(100));
 		System.out.println(list);
 

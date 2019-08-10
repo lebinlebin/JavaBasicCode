@@ -6,7 +6,7 @@ import Java.lebin.Training.setSys.utils.CollectionUtils;
 
 /**
  * 此类用于演示HashSet的特点和底层
- * @author liyuting
+ * @author liulebin
  *
  */
 

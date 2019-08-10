@@ -12,9 +12,6 @@ public class Book{
 	 * 2、属性一样的话，要求哈希值肯定一样
 	 *   属性不一样的，尽最大的限度让哈希值不一样！
 	 */
-	
-	
-	
 //	@Override
 //	public int hashCode() {
 //		return name.hashCode()+(int)price+author.hashCode()*31;
