@@ -22,7 +22,7 @@ import org.junit.Test;
  *    F7 结束当前方法的执行，返回调用方
  *    F8 跳过当前断点，直接执行下一个断点
  */
-public class TestCollection4 {
+public class TestCollectionRemove {
 	Collection col;
 	
 	@Before

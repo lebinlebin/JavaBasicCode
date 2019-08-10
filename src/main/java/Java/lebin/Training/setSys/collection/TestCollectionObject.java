@@ -5,10 +5,10 @@ import java.util.Collection;
 
 /**
  * 此类用于演示使用Collection添加对象类型元素 ★
- * @author liyuting
+ * @author liulebin
  *
  */
-public class TestCollection2 {
+public class TestCollectionObject {
 	
 	public static void main(String[] args) {
 		

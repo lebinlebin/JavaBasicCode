@@ -12,7 +12,7 @@ import Java.lebin.Training.setSys.utils.CollectionUtils;
 
 /**
  * 此类用于演示Collections工具类的常见方法
- * @author liyuting
+ * @author liulebin
  *reverse(List)：反转 List 中元素的顺序
 shuffle(List)：对 List 集合元素进行随机排序
 sort(List)：根据元素的自然顺序对指定 List 集合元素按升序排序

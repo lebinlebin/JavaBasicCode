@@ -5,17 +5,14 @@ import java.util.Collection;
 
 /**
  * 此类用于演示Collection接口的常见方法
- * @author liyuting
  * add/addAll
  * remove/removeAll
  * contains/containsAll
  * clear
  * size
  * isEmpty
- * 
- *
  */
-public class TestCollection1 {
+public class TestCollectionbasic {
 
 	
 	public static void main(String[] args) {

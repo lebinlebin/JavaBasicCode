@@ -9,7 +9,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示Collection接口的遍历方式
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestCollection3 {
