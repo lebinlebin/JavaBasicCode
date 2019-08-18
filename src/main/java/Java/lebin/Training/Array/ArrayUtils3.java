@@ -1,4 +1,4 @@
-package Java.lebin.Training.javabasic;
+package Java.lebin.Training.Array;
 
 /*
 此类用于演示数组的高级使用：增加和插入

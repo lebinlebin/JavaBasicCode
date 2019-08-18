@@ -1,4 +1,4 @@
-package Java.lebin.Training.javabasic;
+package Java.lebin.Training.Array;
 
 /*
 此类用于演示二维数组的静态初始化

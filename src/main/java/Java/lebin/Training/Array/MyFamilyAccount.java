@@ -1,4 +1,4 @@
-package Java.lebin.Training.javabasic;
+package Java.lebin.Training.Array;
 import java.util.Scanner;
 import java.text.MessageFormat;
 class MyFamilyAccount

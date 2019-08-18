@@ -1,4 +1,4 @@
-package Java.lebin.Training.javabasic;
+package Java.lebin.Training.Array;
 
 //1. 输出100以内的所有素数(质数)，每行显示5个；并求和。
 /*

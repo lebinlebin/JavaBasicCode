@@ -1,4 +1,4 @@
-package Java.lebin.Training.javabasic;
+package Java.lebin.Training.Array;
 
 /*
 此类用于演示二维数组的动态初始化：不固定列数

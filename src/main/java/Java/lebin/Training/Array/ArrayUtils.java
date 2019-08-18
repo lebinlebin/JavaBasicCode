@@ -5,7 +5,7 @@ package Java.lebin.Training.Array;/*
 */
 import java.util.Scanner;
 //演示增加
-class ArrayUtils3
+class ArrayUtils33
 {
 	public static void main(String[] args)
 	{
@@ -63,7 +63,7 @@ class ArrayUtils3
 	}
 }
 //演示插入
-class ArrayUtils3_2
+class ArrayUtils333
 {
 	public static void main(String[] args)
 	{
