@@ -1,101 +1,91 @@
-package Java.lebin.Training.Array;
+package Java.lebin.Training.Array;/*
 
-//1. 输出100以内的所有素数(质数)，每行显示5个；并求和。
-/*
-素数：只能被1和本身整除的数
-比如：3 5 7 11 13 17 19 23
+------------------------------小小计算器-------------------------
+
+1.加法
+2.减法
+3.乘法
+4.除法
+0.退出
+请选择：1
+10+5=15
 
 
-9 ：
-2 3 4 5 6
 
 */
 import java.util.Scanner;
+
 class Homework1
 {
-	public static void main(String[] args)
-	{
-		int count = 0;//统计个数
-		int sum = 0;//求和
+    public static void main(String[] args)
+    {
+        Scanner input  = new Scanner(System.in);
+        int a= 10;
+        int b = 5;
+        char key;
+        boolean flag = true;
+        do{
+            System.out.println("------------------------------小小计算器-------------------------");
+            System.out.print("1.加法 \n2.减法 \n3.乘法 \n4.除法 \n0.退出\n请选择：");
+            key = input.next().charAt(0);
+            switch(key){
+                case '1':System.out.println(a+"+"+b+"="+(a+b));break;
+                case '2':System.out.println(a+"-"+b+"="+(a-b));break;
+                case '3':System.out.println(a+"*"+b+"="+(a*b));break;
+                case '4':System.out.println(a+"/"+b+"="+(a/b));break;
+                case '0':System.out.println("程序退出");flag =false;break;
 
-		for(int i=2;i<=100;i++){//i:待判断的元素
-			boolean flag = false;
-			for(int j=2;j<=Math.sqrt(i);j++){//j:除数
-				if(i%j==0){
-					//不是素数
-					flag = true;//更新标记
-					break;
-				}
+            }
 
-			}
 
-			if(!flag){
-				//是素数
-				System.out.print(i+"\t");
-				count++;
-				if(count%5==0){
-					System.out.println();
-				}
-				sum+=i;
-			}
-		}
-		System.out.println(sum);
-	}
+        }while(flag);
+
+    }
 }
-//【普通循环】
-//【选作】5. 中国有句俗语叫“三天打鱼两天晒网”。
-//如果从1990年1月1日起开始执行“三天打鱼两天晒网”。如何判断在以后的某一天中是“打鱼”还是“晒网”？
-
+//4.输入年月日，判断该日是当年的第几天
 
 /*
-1998-3-4
 
-1998-3-4————————1990-1-1 的总天数  185
-
-
-1.1998-1-1——————1990—1-1 的天数
-
-2.1998-1-1——————1998-3-14 的天数
+2018-3-14
+1：天数
+2：天数
+3:14
 
 
 
-185%5
-	1
-	2
-	3
-	4
-	0
+2018-9—18
+1
+2
+3
+4
+
+8
+9:18
+
+方式一：循环
+
+
+
+方式二：switch
+
 
 */
-
 class Homework2
 {
-	public static void main(String[] args)
-	{
 
-		Scanner input  = new Scanner(System.in);
-		System.out.print("请输入年：");
-		int year = input.nextInt();
-		System.out.print("请输入月：");
-		int month = input.nextInt();
-		System.out.print("请输入日：");
-		int day = input.nextInt();
+    public static void main(String[] args)
+    {
+        Scanner input  = new Scanner(System.in);
 
-
-		//1.求整年的天数差： year-1-1——————————1990-1-1
-		int sumOfYears = 0;
-
-
-		for(int i=1990;i<year;i++){//i代表每一年
-			if(i%4==0&&i%100!=0||i%400==0)
-				sumOfYears+=366;
-			else
-				sumOfYears+=365;
-		}
-
-		//2.输入的这一年的日期到本年的1月1日的天数差
-		int sumOfMonths = 0;
-		for(int i=1;i<month;i++){
+        System.out.print("please input year:");
+        int year= input.nextInt();
+        System.out.print("please input month:");
+        int month= input.nextInt();
+        System.out.print("please input day:");
+        int day= input.nextInt();
+		/*
+		int sum=0;//保存天数和
+		for(int i=1;i<month;i++){//i:代表每一个月
 			switch(i){
 				case 1:
 				case 3:
@@ -103,35 +93,106 @@ class Homework2
 				case 7:
 				case 8:
 				case 10:
-				case 12:sumOfMonths+=31;break;
+				case 12:sum+=31;break;
 				case 2:
-					if(year%4==0&&year%100!=0||year%400==0)
-						sumOfMonths+=29;
-					else
-						sumOfMonths+=28;
+					if(year%4==0&&year%100!=0||year%400==0){
+						sum+=29;
+					}else{
+						sum+=28;
+					}
 					break;
 				default:
-					sumOfMonths+=30;
-					break;
-
-
+					sum+=30;break;
 			}
-
 		}
+		System.out.println("这是该年的第"+(sum+day)+"天");
 
-		int totalDays = sumOfMonths+sumOfYears+day;
+		*/
+        int sum=0;//保存天数和
+        switch(month-1){
+            case 12:sum+=31;
+            case 11:sum+=30;
+            case 10:sum+=31;
+            case 9:sum+=30;
+            case 8:sum+=31;
+            case 7:sum+=31;
+            case 6:sum+=30;
+            case 5:sum+=31;
+            case 4:sum+=30;
+            case 3:sum+=31;
+            case 2:
+                if(year%4==0&&year%100!=0||year%400==0){
+                    sum+=29;
+                }else{
+                    sum+=28;
+                }
+            case 1:sum+=31;
 
-		switch(totalDays%5){
-			case 1:
-			case 2:
-			case 3:
-				System.out.println("打鱼");break;
-			default:
-				System.out.println("筛网");break;
+        }
+        System.out.println(sum+day);
 
 
-		}
 
-	}
+
+    }
+
+}
+
+
+/*
+
+随机猜数游戏
+
+*/
+
+class Homework3
+{
+
+    public static void main(String[] args)
+    {
+        Scanner input  = new Scanner(System.in);
+
+        int rand = (int)(Math.random()*100+1);//随机数
+        System.out.println(rand);
+
+        boolean flag = false;
+        int i=1;
+        for(;i<=10;i++){//i：猜的次数
+            System.out.print("请猜：");
+            int num = input.nextInt();
+
+            if(num==rand){
+                if(i==1){
+                    System.out.println("你是个天才");
+                }else if(i<=3){
+                    System.out.println("你很聪明，赶上我了");
+
+                }else if(i<=9){
+                    System.out.println("一般般");
+
+                }else{
+                    System.out.println("可算猜对了");
+                }
+                flag = true;
+                break;
+            }else if(num>rand){
+                System.out.println("再小点");
+            }else{
+                System.out.println("再大点");
+            }
+
+
+        }
+
+        if(!flag){//一次没猜对
+            System.out.println("你太笨了！");
+
+        }
+
+
+
+
+    }
+
 
 }
