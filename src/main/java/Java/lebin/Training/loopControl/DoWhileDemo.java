@@ -38,9 +38,6 @@ class DoWhileExec1
 			if(i%2!=0)
 				//2.求和
 				sum+=i;
-
-
-
 			i++;
 		}while(i<=1000);
 		System.out.println(sum);

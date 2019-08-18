@@ -8,6 +8,8 @@ package  Java.lebin.Training.loopControl;
 import java.util.Scanner;
 
 //题型一：案例：打印1——100
+// 死循环
+
 class ForDemo
 {
 	public static void main(String[] args)
