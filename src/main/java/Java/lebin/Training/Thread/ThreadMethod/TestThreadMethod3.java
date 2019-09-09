@@ -1,7 +1,7 @@
 package Java.lebin.Training.Thread.ThreadMethod;
 /**
  * 此类用于演示线程的常见方法三：
- * @author liyuting
+ * @author liulebin
  * setPriority:设置优先级 1_10  
  * getPriority：获取优先级
  *

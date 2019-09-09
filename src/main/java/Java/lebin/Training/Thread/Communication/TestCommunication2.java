@@ -3,7 +3,7 @@ package Java.lebin.Training.Thread.Communication;
 
 /**
  * 此类用于演示线程的通信
- * @author liyuting
+ * @author liulebin
  * 
  * 案例：多个生产者和多个消费者
  * 修改：

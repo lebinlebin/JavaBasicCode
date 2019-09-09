@@ -13,7 +13,7 @@ import Java.lebin.Training.setSys.test.Employee;
 
 员工类：姓名、工资、编号
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestMap {

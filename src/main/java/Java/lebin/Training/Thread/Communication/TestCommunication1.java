@@ -100,8 +100,5 @@ class Clerk{
 		System.out.println("消费者消费了一件产品，目前库存为："+(--count));
 		
 		this.notify();//唤醒生产者去生产
-		
 	}
-	
-	
 }

@@ -1,7 +1,7 @@
 package Java.lebin.Training.Thread.ThreadMethod;
 /**
  * 此类用于演示线程的常见方法四：
- * @author liyuting
+ * @author liulebin
  * 
  * yield:线程的礼让，但是礼让的时间不确定。 是一个静态方法，直接通过类名调用即可
  * join：线程的插队，当前线程已经抢到cpu占用权，让其他线程插队在自己前面执行

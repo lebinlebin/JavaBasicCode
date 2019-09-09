@@ -17,7 +17,7 @@ public class TestGeneric1 {
 	public void test1() {
 		
 		List list  = new ArrayList();
-		//不足1：任意类型元素都可以添加
+		//不足1：任意类型元素都可以添加 不安全
 		list.add("lucy");
 		list.add("john");
 		list.add(100);

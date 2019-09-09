@@ -23,6 +23,9 @@ public class HashMapSort {
 		System.out.println();
 
 
+		/**
+		 * 要比较vlue要先将map转化为list，然后利用list的sort方法
+		 */
 		//value-sort
 		List<Map.Entry<String, Integer>> list = new ArrayList<Map.Entry<String, Integer>>(phone.entrySet());
 
