@@ -2,11 +2,12 @@ package Java.lebin.Training.Thread.ThreadMethod;
 /**
  * 此类用于演示线程的常见方法二：
  * @author liulebin
- * sleep:让当前线程休眠指定毫秒数，参数单位：ms,是一个静态方法，可以直接通过类名调用。一般来讲，用于模拟线程交错效果
+ * sleep:让当前线程休眠指定毫秒数，参数单位：ms,是一个静态方法，可以直接通过类名调用。
+ * 一般来讲，用于模拟线程交错效果
  * interrupt：中断线程的休眠、等待状态，如果中断的线程正在休眠，则会抛InterruptedException
  *
  */
-public class TestThreadMethod2 {
+public class TreadInterrupt {
 	
 	public static void main(String[] args) {
 		

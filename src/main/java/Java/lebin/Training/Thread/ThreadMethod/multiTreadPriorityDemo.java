@@ -6,7 +6,7 @@ package Java.lebin.Training.Thread.ThreadMethod;
  * getPriority：获取优先级
  *
  */
-public class TestThreadMethod3 {
+public class multiTreadPriorityDemo {
 	
 	public static void main(String[] args) {
 		PriorityDemo pd1 = new PriorityDemo("A");

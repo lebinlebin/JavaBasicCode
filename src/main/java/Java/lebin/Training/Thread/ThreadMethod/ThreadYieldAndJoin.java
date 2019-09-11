@@ -11,12 +11,12 @@ package Java.lebin.Training.Thread.ThreadMethod;
  */
 
 
-public class TestThreadMethod4 {
+public class ThreadYieldAndJoin {
 	
 	public static void main(String[] args) {
 		
-//		YieldDemo yd = new YieldDemo();
-//		yd.start();
+		YieldDemo yd = new YieldDemo();
+		yd.start();
 		
 		JoinDemo jd = new JoinDemo();
 		jd.start();
