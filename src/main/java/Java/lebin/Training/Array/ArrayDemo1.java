@@ -37,7 +37,13 @@ class ArrayDemo1
 		*/
         arr = new int[5];
 
-
+        Double[] WeightRange = new Double[2];
+        Double a =  WeightRange[0];
+        System.out.println(">>>>>>>>:   "+WeightRange.length);
+        System.out.println(a);
+        String dim1Attr1 = "brandall";
+        String userTopKey = dim1Attr1.substring(0, dim1Attr1.length() - 1);
+        System.out.println("userTopKey>>>>>>>>>>>>>>>      "+userTopKey);
         //可以合二为一
         int[] arr2 = new int[5];
 
@@ -51,10 +57,10 @@ class ArrayDemo1
 
         //arr={1,2,3};
         //步骤4：使用
-        System.out.println(arr);
-        System.out.println(arr[0]);
-        System.out.println(arr[1]);
-        System.out.println(arr[1]);
+//        System.out.println(arr);
+//        System.out.println(arr[0]);
+//        System.out.println(arr[1]);
+//        System.out.println(arr[1]);
 
     }
 }
