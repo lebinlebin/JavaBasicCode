@@ -1,11 +1,8 @@
 package Java.lebin.Training.Array;
 
 /*
-
 此类用于演示数组的声明和使用步骤 ★
-
 应用场景：声明时并不知道要赋的值是什么
-
 */
 
 
