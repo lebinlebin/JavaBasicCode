@@ -57,15 +57,12 @@ class DoWhileExec2
 		Scanner input = new Scanner(System.in);
 		String name;//循环变量初始化
 		do{
-
 			//循环操作
 			System.out.print("请输入姓名：");
-			name = input.next();//循环变量更新
-
-
-		}while(!(name.equals("exit")||name.equals("q")));//循环条件
-
-
+			//循环变量更新
+			name = input.next();
+			//循环条件
+		}while(!(name.equals("exit")||name.equals("q")));
 	}
 
 }

@@ -19,14 +19,10 @@ class BreakDemo
 }
 //100以内的数求和，求出和第一次大于20的当前数
 
-class BreakExec1
-{
-	public static void main(String[] args)
-	{
+class BreakExec1{
+	public static void main(String[] args) {
 		int sum = 0;
 		for(int i=1;i<=100;i++){
-
-
 			sum+=i;
 			if(sum>=20){
 				System.out.println("当前数:"+i);
@@ -78,6 +74,23 @@ class BreakExec2
 			}
 		}
 
+	}
+
+}
+
+class BreakExec3
+{
+	public static void main(String[] args)
+	{
+		label:for(int i=1;i<=10;i++){
+			for(int j=1;j<=5;j++){
+				if(j==3){
+					break label;
+				}
+				System.out.println("哈哈"+j);
+			}
+			System.out.println("嘻嘻------------"+i);
+		}
 	}
 
 }
