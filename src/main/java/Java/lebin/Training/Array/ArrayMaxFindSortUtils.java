@@ -8,7 +8,7 @@ package Java.lebin.Training.Array;
 import java.util.Scanner;
 
 //1.求最值
-class ArrayUtils1
+class ArrayUtilsMax
 {
     public static void main(String[] args)
     {
@@ -44,7 +44,7 @@ class ArrayUtils1
 
 */
 //2.查找
-class ArrayUtils1_2
+class ArrayUtilsFindValue
 {
     public static void main(String[] args)
     {
@@ -85,7 +85,7 @@ class ArrayUtils1_2
 
 }
 //3.冒泡排序
-class ArrayUtils1_3
+class ArrayUtilsSort
 {
     public static void main(String[] args)
     {
@@ -130,11 +130,9 @@ class ArrayUtils1_3
 
 /*
    小明要去买一部手机，他询问了4家店的价格，分别是2800元，2900元，2750元和3100元，显示输出最低价
-
-
 */
 
-class ArrayExec1
+class ArrayFindMinPrice
 {
     public static void main(String[] args)
     {

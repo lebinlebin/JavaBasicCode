@@ -3,7 +3,7 @@ package Java.lebin.Training.Array;
 //求一个班级10名同学的平均分
 
 import java.util.Scanner;
-class ArrayExec11
+class ArrayGetTheAveScore
 {
     public static void main(String[] args)
     {
@@ -39,7 +39,7 @@ class ArrayExec11
 
 */
 
-class ArrayExec2
+class ArrayStoreA2Z
 {
     public static void main(String[] args)
     {
@@ -63,7 +63,7 @@ class ArrayExec2
 //创建一个char类型的36个元素的数组，前26个元素放置'A'-'Z‘,   后10个元素放置'0'-'9‘。
 //使用for循环访问所有元素并打印出来。
 */
-class ArrayExec3
+class ArrayStoreA2Zand0_9
 {
     public static void main(String[] args)
     {

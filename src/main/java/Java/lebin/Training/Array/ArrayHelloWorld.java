@@ -41,6 +41,8 @@ class ArrayDemo1
         String dim1Attr1 = "brandall";
         String userTopKey = dim1Attr1.substring(0, dim1Attr1.length() - 1);
         System.out.println("userTopKey>>>>>>>>>>>>>>>      "+userTopKey);
+
+
         //可以合二为一
         int[] arr2 = new int[5];
 

@@ -6,20 +6,15 @@ package Java.lebin.Training.Array;
 使用步骤：
 
 1、声明并初始化
-
 	数据类型[][] 数组名 = {{值，值},{值，值，值},{值}};
 	或
 	数据类型[][] 数组名 = new 数据类型[][]{{值，值},{值，值，值},{值}};
-
-
 2、使用
-
-
 */
 
 
 
-class TwoDimensionArray3
+class TwoDimensionArrayInitial
 {
 	public static void main(String[] args)
 	{

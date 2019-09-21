@@ -6,7 +6,7 @@ package Java.lebin.Training.Array;/*
 */
 
 
-class ArrayDemo2
+class ArraySum
 {
     public static void main(String[] args)
     {

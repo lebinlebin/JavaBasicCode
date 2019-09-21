@@ -7,6 +7,7 @@ class ReturnDemo
 		for(int i=1;i<=10;i++){
 			if(i==3){
 				return;
+//				break;
 			}
 
 			System.out.println("呵呵"+i);

@@ -26,7 +26,7 @@ arr[length/2-1]
 */
 
 //方式一：找规律
-class ArrayUtils2
+class ArrayUtilsRevert
 {
 	public static void main(String[] args)
 	{
@@ -68,7 +68,7 @@ class ArrayUtils2
 }
 
 //方式二：数组的赋值
-class ArrayUtils2_2
+class ArrayUtilsReVert
 {
 	public static void main(String[] args)
 	{
