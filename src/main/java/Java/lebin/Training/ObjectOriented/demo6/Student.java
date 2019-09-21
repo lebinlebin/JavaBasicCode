@@ -1,6 +1,7 @@
 package Java.lebin.Training.ObjectOriented.demo6;
 
 public class Student extends Person {
+	@Override
 	public String getInfo(){
 		return super.getInfo()+"\t"+score;
 	}

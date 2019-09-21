@@ -12,7 +12,6 @@ package Java.lebin.Training.ObjectOriented.demo7;
  * 静态初始化块：加载类时，隐式调用
  */
 public class TestInit1 {
-	
 	public static void main(String[] args) {
 		System.out.println((int)(Math.random()*40+1));
 		System.out.println(InitDemo1.a);//加载类
@@ -22,11 +21,7 @@ public class TestInit1 {
 }
 class InitDemo1{
 	static int a =100;
-	
-	
-	
 	{
-		
 		System.out.println("我是普通初始化块");
 	}
 	static{

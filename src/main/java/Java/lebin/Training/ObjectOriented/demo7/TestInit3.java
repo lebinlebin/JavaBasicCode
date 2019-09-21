@@ -10,14 +10,10 @@ public class TestInit3 {
 	public static void main(String[] args) {
 //		System.out.println(InitDemo2.a);//加载类
 		new InitDemo3();//加载+创建对象
-		
 	}
 
 }
 class InitDemo3{
-	
-	
-	
 	{
 		
 		System.out.println("我是普通初始化块1");

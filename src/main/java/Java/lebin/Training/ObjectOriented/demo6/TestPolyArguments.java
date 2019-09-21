@@ -1,8 +1,8 @@
 package Java.lebin.Training.ObjectOriented.demo6;
 /**
  * 此类用于演示多态参数的使用
- * @author liyuting
- *
+ * @author liulebin
+ * 类型转换
  */
 public class TestPolyArguments {
 	
@@ -37,9 +37,5 @@ public class TestPolyArguments {
 	//方法：可以实现对person对象的getInfo方法调用
 	public  void method(Person per){
 		System.out.println(per.getInfo());
-		
 	}
-
-		
-
 }

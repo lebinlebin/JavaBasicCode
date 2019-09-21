@@ -1,7 +1,7 @@
 package Java.lebin.Training.ObjectOriented.demo5;
 /**
  * 此类用于演示关于属性的多态型？
- * @author liulebinn
+ * @author liulebin
  * 属性：没有重写之说
  * 通过多态访问属性时，属性值要看左边的编译类型！
  *
@@ -12,7 +12,7 @@ public class TestPoly2 {
 		//使用多态
 		Son f = new Son();
 		
-//		f.show();
+		f.show();
 		
 		System.out.println(f.name);
 	}

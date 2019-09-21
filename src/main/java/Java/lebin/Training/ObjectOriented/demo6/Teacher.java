@@ -9,7 +9,7 @@ public class Teacher extends Person {
 	public void teach(){
 		System.out.println("好好教学，天天向上");
 	}
-	
+	@Override
 	public String getInfo() {
 		return super.getInfo()+"\t"+salary;
 	}

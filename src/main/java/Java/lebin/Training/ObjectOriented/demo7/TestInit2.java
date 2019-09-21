@@ -20,8 +20,6 @@ public class TestInit2 {
 class InitDemo2{
 	static int a =100;
 	
-	
-	
 	{
 		
 		System.out.println("我是普通初始化块");

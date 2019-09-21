@@ -6,17 +6,12 @@ package Java.lebin.Training.ObjectOriented.demo7;
  * 爷爷类的静态属性初始化|静态代码块——>父类的静态属性初始化|静态代码块——>子类的静态属性初始化|静态代码块——>
  * 爷爷类的普通属性初始化|普通代码块——>爷爷类的构造器——>父类的普通属性初始化|普通代码块——>父类的构造器——>子类的普通属性初始化|普通代码块——>子类的构造器
  *  同一个类别的属性初始化和代码块的执行顺序取决于定义的先后顺序
- * 
- * 
- * 
- * 
  */
 public class TestInit5 {
 	
 	public static void main(String[] args) {
 		InitDemo5 id = new InitDemo5();
 	}
-
 }
 class Grand{
 	public Grand(){
@@ -67,8 +62,6 @@ class Father extends Grand{
 	
 }
 class InitDemo5 extends Father{
-	
-	
 	public InitDemo5(){
 		System.out.println("我是子类的构造器");
 	}

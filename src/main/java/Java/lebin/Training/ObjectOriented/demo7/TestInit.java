@@ -8,7 +8,6 @@ public  class TestInit {
 	
 	
 	public static void main(String[] args) {
-		
 		InitDemo id = new InitDemo();
 		InitDemo id1 = new InitDemo("john");
 	}
@@ -27,8 +26,6 @@ class InitDemo{
 	}
 	
 	public InitDemo(){
-		
-		
 	}
 
 	
@@ -51,6 +48,4 @@ class InitDemo{
 		this.age = age;
 		this.height = height;
 	}
-	
-	
 }
