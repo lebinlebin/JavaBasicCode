@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.ThreadPriorityMethod;
+package Java.lebin.Training.Thread.ThreadPriorityLYieldJoinInterrupt;
 /**
  * 此类用于演示线程的常见方法二：
  * @author liulebin

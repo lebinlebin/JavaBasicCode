@@ -12,7 +12,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示序列化和反序列化流
- * @author liyuting
+ * @author liulebin
  * 
  * 序列化：将二进制文件持久化到本地或网络
  * 

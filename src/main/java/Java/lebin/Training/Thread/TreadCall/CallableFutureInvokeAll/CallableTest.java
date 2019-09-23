@@ -21,5 +21,4 @@ public class CallableTest implements Callable<String> {
         Thread.sleep(1000);
         return str;
     }
-
 }

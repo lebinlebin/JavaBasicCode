@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 /**
  * 此类用于演示Lambda表达式的语法和特点
- * @author liyuting
+ * @author liulebin
  * 
  * 理解：
  * 	Lambda表达式相当于代替匿名内部类的，但要求：匿名内部类实现的接口中只有一个抽象方法
@@ -35,9 +35,6 @@ import java.util.Comparator;
  * ②如果Lambda体中只有一句话，则大括号也可以省略
  * ③如果Lambda体中只有一句话而且是return语句，则return也可以省略
  * ④如果只有一个参数，则小括号也可以省略
- * 
- * 
- * 
  *
  */
 public class TestLambda2 {
@@ -47,7 +44,7 @@ public class TestLambda2 {
 	public void test1() {
 		//匿名内部类
 		Runnable r = new Runnable(){
-			
+			@Override
 			public void run() {
 				System.out.println("哈哈哈1");
 				System.out.println("哈哈哈2");
@@ -57,11 +54,9 @@ public class TestLambda2 {
 		r.run();
 		//Lambda
 		
-		Runnable r2 = ()->{
+		Runnable r2 = () -> {
 			System.out.println("哈哈哈1");
 			System.out.println("哈哈哈2");
-			
-		
 		};
 		
 		r2.run();
@@ -83,7 +78,6 @@ public class TestLambda2 {
 		
 		
 		//Lambda
-		
 		Comparator<String> c2 = ( o1, o2)-> o1.compareTo(o2);
 		
 	}
@@ -96,14 +90,11 @@ public class TestLambda2 {
 			@Override
 			public void method(String s) {
 				System.out.println(s);
-				
 			}
-			
-			
 		};
 		
-		
-		Fly fly2 = s->System.out.println(s);
+
+		Fly fly2 = s -> System.out.println(s);
 
 	}
 

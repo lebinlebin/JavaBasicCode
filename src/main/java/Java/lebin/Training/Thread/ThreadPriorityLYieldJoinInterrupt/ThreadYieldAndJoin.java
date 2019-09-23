@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.ThreadPriorityMethod;
+package Java.lebin.Training.Thread.ThreadPriorityLYieldJoinInterrupt;
 /**
  * 此类用于演示线程的常见方法四：
  * @author liulebin
@@ -7,9 +7,7 @@ package Java.lebin.Training.Thread.ThreadPriorityMethod;
  * join：线程的插队，当前线程已经抢到cpu占用权，让其他线程插队在自己前面执行
  * 				如果其他线程插队成功，则肯定其他线程先执行完
  * 				注意：其他线程有可能没有插队成功
- *
  */
-
 
 public class ThreadYieldAndJoin {
 	
@@ -20,15 +18,15 @@ public class ThreadYieldAndJoin {
 		
 		JoinDemo jd = new JoinDemo();
 		jd.start();
-		for(int i=1;i<=500;i++){
+
+		for(int i=1; i <= 500; i++){
 			System.out.println("马兰伟在买包子~~"+i);
-			if(i>=5){
+			if( i>= 5){
 				try {
 					jd.join();//让jd线程插队在当前线程前面去，先执行
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				
 			}
 		}
 		

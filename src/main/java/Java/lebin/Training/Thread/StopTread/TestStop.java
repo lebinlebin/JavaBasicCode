@@ -7,7 +7,7 @@ import java.util.Scanner;
 在main方法中创建并启动两个线程。
 第一个线程循环随机打印100以内的整数，直到第二个线程从键盘读取了“Q”命令。
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestStop {
@@ -15,7 +15,6 @@ public class TestStop {
 	public static void main(String[] args) {
 		MyThread1 m1 = new MyThread1();
 		MyThread2 m2 = new MyThread2(m1);
-		
 		m1.start();
 		m2.start();
 		

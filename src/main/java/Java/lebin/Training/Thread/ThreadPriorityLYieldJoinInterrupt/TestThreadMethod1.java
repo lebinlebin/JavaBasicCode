@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.ThreadPriorityMethod;
+package Java.lebin.Training.Thread.ThreadPriorityLYieldJoinInterrupt;
 /**
  * 此类用于演示线程的常见方法一：
  * @author liulebin
@@ -31,10 +31,8 @@ class A extends Thread{
 	public A(String name){
 		super(name);
 	}
-	
 	@Override
 	public void run() {
-		
 		for(int i=1;i<=100;i++){
 			System.out.println(getName()+"----"+i);
 		}

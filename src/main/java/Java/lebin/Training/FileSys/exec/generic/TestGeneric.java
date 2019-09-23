@@ -29,7 +29,7 @@ public void delete(String id)：删除指定 id 对象
 创建 DAO 类的对象， 分别调用其 save、get、update、list、delete 方法来操作 User 对象，
 使用 Junit 单元测试类进行测试。
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestGeneric {
