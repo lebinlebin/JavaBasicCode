@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.ThreadMethod;
+package Java.lebin.Training.Thread.ThreadPriorityMethod;
 /**
  * 此类用于演示线程的常见方法三：
  * @author liulebin
