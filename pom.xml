@@ -6,7 +6,7 @@
 
     <groupId>JavaLearning.lebin</groupId>
     <artifactId>JavaLearning.lebin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>3.0-SNAPSHOT</version>
     <inceptionYear>2019</inceptionYear>
 
     <properties>
