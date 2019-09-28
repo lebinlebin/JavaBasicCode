@@ -1,4 +1,4 @@
-package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2;
+package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2StaticMethod;
 /**
  * 此类用于演示静态方法的特点
  * @author liulebin
@@ -52,10 +52,10 @@ class Animal{
 	public static void method(){
 		Animal ani = new Animal();
 		System.out.println("我是静态方法");
-		System.out.println(ani.name);//普通属性
+		System.out.println(ani.name);//普通属性，必须声明对象，然后通过对象调用
 		System.out.println(age);//静态成员
 		ani.show2();//普通方法
-		
+//		show2();//不能直接调用。普通方法，不能被静态方法直接调用。
 //		this.name="";
 	}
 	public void show2(){

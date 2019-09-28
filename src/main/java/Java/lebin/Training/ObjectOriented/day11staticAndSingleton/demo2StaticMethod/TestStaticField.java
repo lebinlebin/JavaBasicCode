@@ -1,4 +1,4 @@
-package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2;
+package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2StaticMethod;
 /**
  * 此类用于演示静态属性的特点
  * @author liulebin

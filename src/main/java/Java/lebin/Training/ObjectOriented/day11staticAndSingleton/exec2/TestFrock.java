@@ -7,15 +7,15 @@ package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.exec2;
 在Frock类的构造器中，通过调用getNextNum方法为Frock对象获取唯一序列号；
 在TestFrock类的main方法中，分别创建三个Frock 对象，并打印三个对象的序列号，验证是否为按100递增。
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestFrock {
 	
 	public static void main(String[] args) {
-//		System.out.println(Frock.getNextNum());
-//		System.out.println(Frock.getNextNum());
-//		
+		System.out.println(Frock.getNextNum());
+		System.out.println(Frock.getNextNum());
+
 		Frock f1 = new Frock();
 		System.out.println(f1.getSerialNumber());
 		
@@ -36,7 +36,7 @@ class Frock{
 		return serialNumber;
 	}
 	public Frock(){
-		serialNumber=getNextNum();
+		serialNumber = getNextNum();
 		
 	}
 	private static int currentNum = 100000;

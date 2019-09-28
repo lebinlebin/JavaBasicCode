@@ -1,4 +1,4 @@
-package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.exec1;
+package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.exec1MyDate;
 /**
  * 编写MyDate类表示日期，
  * 类中包含属性day、month和year，提供必要的方法，并覆盖equals方法以比较年、月、日是否相同,重写toString返回年月日的信息。Xx年xx月xx日

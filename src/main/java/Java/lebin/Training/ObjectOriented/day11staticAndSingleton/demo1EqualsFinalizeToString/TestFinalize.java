@@ -1,4 +1,4 @@
-package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo1;
+package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo1EqualsFinalizeToString;
 /**
  * 
  *此类用于演示Object类的常见方法：finalize

@@ -1,4 +1,4 @@
-package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo3;
+package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo3Singleton;
 /**
  * 此类用于演示单例设计模式
  * @author liulebin
@@ -43,6 +43,7 @@ public class TestSingle {
 }
 
 //方式二：懒汉式
+//效率高
 
 
 class Single2{
@@ -58,14 +59,15 @@ class Single2{
 	//3、提供public static方法，暴露该对象
 	
 	public static Single2 getInstance(){
-		if(s==null)
-			s=new Single2();
+		if(s == null)
+			s = new Single2();
 		return s;
 	}
 	
 	
 }
 //方式一：饿汉式
+// 线程安全
 
 class Single1{
 	

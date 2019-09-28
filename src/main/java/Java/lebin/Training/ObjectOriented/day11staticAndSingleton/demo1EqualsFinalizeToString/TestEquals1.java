@@ -1,4 +1,4 @@
-package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo1;
+package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo1EqualsFinalizeToString;
 
 import Java.lebin.Training.ObjectOriented.day11staticAndSingleton.bean.Person;
 

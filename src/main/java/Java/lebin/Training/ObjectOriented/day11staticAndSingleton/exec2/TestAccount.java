@@ -36,7 +36,8 @@ class Account{
 	private static double minBalance=10;//最小余额
 	
 	private static int currentNum = 100000;
-	
+
+	@Override
 	public String toString(){
 		return accountNo+"\t"+pwd+"\t"+money;
 	}
@@ -74,9 +75,4 @@ class Account{
 	public void setMoney(double money) {
 		this.money = money;
 	}
-	
-	
-	
-	
-	
 }

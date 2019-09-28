@@ -1,6 +1,5 @@
-package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo4;
-/*
- * 
+package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo4Final;
+/**
  * 此类用于演示final关键字的特点
  * 
  * 1、修饰类
