@@ -1,7 +1,7 @@
 package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2;
 /**
  * 此类用于演示静态属性的特点
- * @author liyuting
+ * @author liulebin
  * 1.静态属性 被所有对象所共享的属性，其中一个对象对其更改，影响另外的对象
  *   普通属性 被对象所独享的属性，其中一个对象对其更改，不影响另外的对象
  * 2.生命周期不同
@@ -22,13 +22,6 @@ package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2;
  *  	当该类的某属性所有对象都具有同样的值，而且不轻易更改，这样的属性建议设计成静态属性
  *  
  *  	示例：圆周率：3.14，利率
- *  	
- *  
- *  	
- *    
- *    
- * 
- *
  */
 public class TestStaticField {
 	
@@ -36,7 +29,7 @@ public class TestStaticField {
 		Person p1 = new Person("柳岩","中国");
 		System.out.println(p1);
 		
-		Person p2 = new Person("特朗普","美国");
+		Person p2 = new Person("特朗普","美国");//更改了静态变量，会影响其他对象
 		System.out.println(p2);
 		System.out.println(p1);
 		

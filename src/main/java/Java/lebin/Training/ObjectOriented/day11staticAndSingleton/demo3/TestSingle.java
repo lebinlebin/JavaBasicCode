@@ -1,7 +1,7 @@
 package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo3;
 /**
  * 此类用于演示单例设计模式
- * @author liyuting
+ * @author liulebin
  * 步骤：
  * 1、构造器私有化
  * 2、本类内部创建对象

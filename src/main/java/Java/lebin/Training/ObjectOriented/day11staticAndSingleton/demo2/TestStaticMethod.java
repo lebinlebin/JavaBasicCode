@@ -1,7 +1,7 @@
 package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2;
 /**
  * 此类用于演示静态方法的特点
- * @author liyuting
+ * @author liulebin
  * 1.静态方法和普通方法都是随着类的加载而加载
  * 2.静态方法和普通方法的存储位置都是：方法区
  * 3.不同点 ★
@@ -27,11 +27,6 @@ package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2;
  *  示例：
  *  	Math类的方法
  *  	Arrays类的方法
- *  
- *  
- *  	
- *  
- *
  */
 public class TestStaticMethod {
 	public static void main(String[] args) {

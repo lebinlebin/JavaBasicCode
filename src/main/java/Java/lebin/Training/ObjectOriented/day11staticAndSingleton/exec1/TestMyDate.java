@@ -27,13 +27,17 @@ class MyDate{
 	private int year;
 	private int month;
 	private int day;
-	
-	
+
+	/**
+	 * ctrl +o 快速重写父类方法
+	 * @throws Throwable
+	 */
 	
 	@Override
 	protected void finalize() throws Throwable {
 		System.out.println("MyDate对象被回收了");
 	}
+
 	@Override
 	public boolean equals(Object obj){
 		if(this == obj)

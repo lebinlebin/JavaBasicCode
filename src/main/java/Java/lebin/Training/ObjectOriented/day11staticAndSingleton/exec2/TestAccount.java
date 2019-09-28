@@ -4,7 +4,7 @@ package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.exec2;
 编写主类，使用银行账户类，输入、输出3个储户的上述信息。
 考虑：哪些属性可以设计成static属性。
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestAccount {
