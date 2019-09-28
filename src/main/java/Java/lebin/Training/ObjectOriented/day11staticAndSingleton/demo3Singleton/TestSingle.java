@@ -31,12 +31,12 @@ public class TestSingle {
 //		
 //		System.out.println(s1==s2);//true
 //		
-//		Single2.rate=1000;
-		Single2 s1 =Single2.getInstance();
+		Single2.rate = 1000;
+		Single2 s1 = Single2.getInstance();
 		
 		Single2 s2 = Single2.getInstance();
 		
-		System.out.println(s1==s2);
+		System.out.println( s1 == s2);
 		
 	}
 

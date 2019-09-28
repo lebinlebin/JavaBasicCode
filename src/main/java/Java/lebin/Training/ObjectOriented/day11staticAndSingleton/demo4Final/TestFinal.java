@@ -27,6 +27,8 @@ public  class TestFinal {
 //		Sub s = new Sub();
 //		s.method();
 		System.out.println(A.a);
+//		System.out.println(A.b);
+
 	}
 
 }
@@ -37,9 +39,8 @@ class Sub extends A{
 //	
 }
  class A{
-	 
-	 
-	 public static final int a=100;
+	 public static  int b = 100;
+	 public static final int a = 100;
 	 static{
 		 System.out.println("A类被加载了！");
 		 
