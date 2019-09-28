@@ -52,7 +52,7 @@ public class TestPoly {
 	 	 		
 //	 	向下转型（强制类型转换）
 		Cat c = (Cat) a;
-//		Cat c2 = (Cat)(new Animal());
+//		Cat c2 = (Cat)(new Animal()); 	//①只能强转父类的引用，不能强转父类的对象
 		
 //		Animal b = new Pig();
 //		Cat c3 = (Cat)b;

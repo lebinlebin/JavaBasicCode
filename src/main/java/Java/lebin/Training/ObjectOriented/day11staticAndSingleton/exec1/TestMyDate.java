@@ -4,7 +4,7 @@ package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.exec1;
  * 类中包含属性day、month和year，提供必要的方法，并覆盖equals方法以比较年、月、日是否相同,重写toString返回年月日的信息。Xx年xx月xx日
 在TestDate类的main方法中，创建两个日期均为2014年10月1日的MyDate对象，比较它们是否相同。通过toString方法打印两个对象日期
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestMyDate {
@@ -34,6 +34,7 @@ class MyDate{
 	protected void finalize() throws Throwable {
 		System.out.println("MyDate对象被回收了");
 	}
+	@Override
 	public boolean equals(Object obj){
 		if(this == obj)
 			return true;
@@ -46,6 +47,7 @@ class MyDate{
 	/**
 	 * 功能：重写toString方法，用于返回对象的属性信息
 	 */
+	@Override
 	public String toString(){
 		return year+"年"+month+"月"+day+"日";
 	}
