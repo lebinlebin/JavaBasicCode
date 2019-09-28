@@ -39,14 +39,9 @@ public class TestObjectIO {
 		oos.writeChar('n');//写入2个字节
 		oos.writeBoolean(true);
 		oos.writeUTF("张三丰");
-		
 		oos.writeObject(new Person("john"));
-		
 		//3.关闭
 		oos.close();
-		
-		
-
 	}
 	//测试反序列化
 	@Test
@@ -59,18 +54,13 @@ public class TestObjectIO {
 		System.out.println(ois.readBoolean());
 		System.out.println(ois.readUTF());
 		System.out.println(ois.readObject());
-		
 		ois.close();
-		
-		
-
 	}
 
 }
 
 class Person implements Serializable{
 	String name;
-
 	public Person(String name) {
 		super();
 		this.name = name;
@@ -80,6 +70,5 @@ class Person implements Serializable{
 	public String toString() {
 		return "Person [name=" + name + "]";
 	}
-	
 	
 }

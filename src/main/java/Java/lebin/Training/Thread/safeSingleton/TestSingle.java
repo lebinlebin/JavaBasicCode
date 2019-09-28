@@ -1,6 +1,6 @@
 package Java.lebin.Training.Thread.safeSingleton;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
+//import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
 
 /**
  * 此类用于演示单例设计模式
