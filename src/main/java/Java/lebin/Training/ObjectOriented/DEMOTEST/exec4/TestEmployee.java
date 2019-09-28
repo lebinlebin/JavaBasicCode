@@ -57,6 +57,7 @@ class Manager extends Employee{
 	public void manage(){
 		System.out.println("经理的管理工作");
 	}
+	@Override
 	public double getAnnual(){
 		return super.getAnnual()+bonus;
 	}

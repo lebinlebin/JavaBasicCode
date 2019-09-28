@@ -87,6 +87,12 @@ class Animal{
 class Pig extends Animal{
 	
 }
+class Dog extends Animal{
+	@Override
+	public void eat(){
+		System.out.println("狗吃骨头");
+	}
+}
 class Cat extends Animal{
 	
 	String color;
@@ -98,5 +104,8 @@ class Cat extends Animal{
 	public void climb(){
 		System.out.println("猫爬树");
 	}
-	
+	@Override
+	public void eat(){
+		System.out.println("猫吃鱼");
+	}
 }

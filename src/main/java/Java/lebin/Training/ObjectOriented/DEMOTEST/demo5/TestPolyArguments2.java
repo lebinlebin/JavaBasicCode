@@ -44,11 +44,13 @@ class Animal2{
 	}
 }
 class Cat2 extends Animal2{
+	@Override
 	public void eat(){
 		System.out.println("猫吃鱼");
 	}
 }
 class Dog2 extends Animal2{
+	@Override
 	public void eat(){
 		System.out.println("狗吃骨头");
 	}

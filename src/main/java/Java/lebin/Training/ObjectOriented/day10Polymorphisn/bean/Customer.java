@@ -1,7 +1,7 @@
 package Java.lebin.Training.ObjectOriented.day10Polymorphisn.bean;
 /**
  * 功能：编写实体类Customer
- * @author liyuting
+ * @author liulebin
  *
  */
 public class Customer {

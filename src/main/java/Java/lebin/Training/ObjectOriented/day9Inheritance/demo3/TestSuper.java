@@ -61,6 +61,7 @@ class Son extends Father{
 		System.out.println("this.age:"+this.age);
 		
 	}
+	@Override
 	public void show(){
 //		super.show();
 //		System.out.println(super.name+"\t"+age);

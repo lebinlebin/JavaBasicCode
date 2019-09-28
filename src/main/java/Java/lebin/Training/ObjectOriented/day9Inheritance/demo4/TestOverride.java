@@ -1,7 +1,7 @@
 package Java.lebin.Training.ObjectOriented.day9Inheritance.demo4;
 /**
  * 此类用于演示方法的重写
- * @author liyuting
+ * @author liulebin
  * 要求：
  * 
  * 1、发生在父子类
@@ -14,7 +14,6 @@ package Java.lebin.Training.ObjectOriented.day9Inheritance.demo4;
 public class TestOverride {
 	
 	public static void main(String[] args) {
-		
 		Dog d = new Dog();
 		d.eat();
 	}
@@ -23,13 +22,13 @@ public class TestOverride {
 
 
 class Animal{
-	
 	 Object eat(){
 		System.out.println("动物吃");
 		return 0;
 	}
 }
 class Dog extends Animal{
+	@Override
 	 String eat(){
 		System.out.println("狗吃骨头");
 		return null;
