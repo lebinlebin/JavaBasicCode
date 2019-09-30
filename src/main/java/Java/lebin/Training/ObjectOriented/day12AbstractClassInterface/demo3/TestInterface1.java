@@ -28,13 +28,7 @@ public class TestInterface1 {
 
 }
 interface Fly{
-	
 	 double PI=3.14;
-	 
 	 void show();
 	 String start(int a);
-
-	
-	
-	
 }

@@ -7,7 +7,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示Arrays类的特点和常见方法
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestArrays {

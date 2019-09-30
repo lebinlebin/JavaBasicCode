@@ -15,9 +15,9 @@ public class TestInterface2 {
 
 	
 	public static void main(String[] args) {
-//		Computer com = new Computer();
-//		com.work(new Flash());
-//		com.work(new Printer());
+		Computer com = new Computer();
+		com.work(new Flash());
+		com.work(new Printer());
 //		
 		//多态数组
 		

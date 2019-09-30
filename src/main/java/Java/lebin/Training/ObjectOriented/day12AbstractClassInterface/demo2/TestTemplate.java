@@ -44,8 +44,6 @@ class Sub1 extends Template{
 		for (int i = 1; i <=50000; i++) {
 			sum+=i;
 		}
-		
-		
 	}
 	
 }

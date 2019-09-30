@@ -2,7 +2,7 @@ package Java.lebin.Training.ObjectOriented.DEMOTEST.exec2;
 /**
  * 1.有以下三个方法，分别实现返回姓名和两门课成绩，返回姓名和三门课成绩，返回姓名和五门课成绩。封装成一个可变参数的方法，并调用
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestVarArgs {

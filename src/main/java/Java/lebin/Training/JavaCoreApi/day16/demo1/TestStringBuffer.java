@@ -1,7 +1,7 @@
 package Java.lebin.Training.JavaCoreApi.day16.demo1;
 /**
  * 此类用于演示StringBuffer类和String类之间的转换
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestStringBuffer {

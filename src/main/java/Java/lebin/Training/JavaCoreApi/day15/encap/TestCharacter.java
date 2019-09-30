@@ -1,7 +1,7 @@
 package Java.lebin.Training.JavaCoreApi.day15.encap;
 /**
  * 此类用于演示Character类的常见方法
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestCharacter {

@@ -1,7 +1,7 @@
 package Java.lebin.Training.JavaCoreApi.day16.demo1;
 /**
  * 此类用于演示StringBuffer的常见方法
- * @author liyuting
+ * @author liulebin
  * 增 append
  * 删 delete
  * 改 replace

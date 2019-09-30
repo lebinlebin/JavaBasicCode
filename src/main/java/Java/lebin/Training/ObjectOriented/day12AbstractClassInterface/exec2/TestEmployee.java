@@ -18,8 +18,6 @@ public class TestEmployee {
 
 class CommonEmployee extends Employee{
 
-	
-	
 	public CommonEmployee(String name, int id, double salary) {
 		super(name, id, salary);
 	}
@@ -98,7 +96,7 @@ abstract class Employee{
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	
+	@Override
 	public String toString(){
 		return name+"\t"+id+"\t"+salary;
 	}

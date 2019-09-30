@@ -18,7 +18,7 @@ public class TestEmployee {
 		
 		//向上转型
 		Employee e = new Manager("", 1, 111, 100);
-		e.work();
+		e.work();//编译看左边  运行看右边
 		
 		//向下转型
 		Manager m = (Manager) e;
@@ -125,7 +125,7 @@ abstract class Employee{
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	
+	@Override
 	public String toString(){
 		return name+"\t"+id+"\t"+salary;
 	}

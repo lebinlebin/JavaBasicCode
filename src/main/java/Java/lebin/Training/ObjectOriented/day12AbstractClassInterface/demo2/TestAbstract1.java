@@ -26,7 +26,7 @@ package Java.lebin.Training.ObjectOriented.day12AbstractClassInterface.demo2;
  * 
  * 	①没有方法体，只有方法签名，使用分号结尾
  * 
- * 	②修饰符不能是final、static或private中的任何一个
+ * 	②修饰符不能是final、static 或  private中的任何一个
  * 因为这些修饰符和重写的意义相悖
  * 
  * 	③抽象方法只能出现在抽象类或接口中！
@@ -53,12 +53,12 @@ public class TestAbstract1 {
 	public String say(){
 		return name;
 	}
-	
+
 	public Animal(){
-		
+
 	}
 	//不足1.必须写大括号
-//	static abstract void eat();
+	public  abstract void eat();//不能用static 、final、 private修饰
 }
 abstract class Dog extends Animal{
 	
@@ -66,6 +66,7 @@ abstract class Dog extends Animal{
 }
 class Cat extends Animal{
 
+	@Override
 	public void eat() {
 		
 	}

@@ -74,18 +74,14 @@ interface Study{
 	void study();
 }
 interface Swim{
-	
 	String swim(int a);
 }
 
 interface MyInter extends Study,Swim{
-	
 	String name="";
 	void method();
 }
 abstract class ASub1 implements Study,Swim{
-	
-	
 }
 class Sub1 implements Study,Swim{
 

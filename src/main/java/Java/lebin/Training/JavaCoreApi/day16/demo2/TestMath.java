@@ -1,7 +1,7 @@
 package Java.lebin.Training.JavaCoreApi.day16.demo2;
 /**
  * 此类用于演示Math类的特点和常见方法
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestMath {
