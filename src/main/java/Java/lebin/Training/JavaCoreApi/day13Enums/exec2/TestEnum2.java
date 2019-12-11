@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13.exec2;
+package Java.lebin.Training.JavaCoreApi.day13Enums.exec2;
 /*
  * 
  * 声明Week枚举类，其中包含星期一至星期日的定义；

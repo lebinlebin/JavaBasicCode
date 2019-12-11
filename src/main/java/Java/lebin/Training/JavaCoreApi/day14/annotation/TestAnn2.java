@@ -5,7 +5,7 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * 此类用于演示自定义注解
- * @author liyuting
+ * @author liulebin
  * 
  * 1、定义注解的关键字@interface
  * 2、注解类体中的成员是：

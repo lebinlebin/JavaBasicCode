@@ -7,6 +7,8 @@ public class HashMapSort {
 
 	public static void main(String[] args) {
 		Map phone = new HashMap();
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>:::::   "+phone.size());
 		phone.put("Apple", 7299);
 		phone.put("SAMSUNG", 6000);
 		phone.put("Meizu", 2698);

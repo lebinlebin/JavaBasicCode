@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13.homework;
+package Java.lebin.Training.JavaCoreApi.day13Enums.homework;
 /*
  * 三、多态参数：有一个显示器接口Graphoscope，具有display方法，有两个类：台式显示器和液晶显示器都实现显示器接口，有Computer类，
  * 有个测试显示器testGraphoscope的方法，要求传入显示器接口对象，测试显示功能，生产两台电脑，

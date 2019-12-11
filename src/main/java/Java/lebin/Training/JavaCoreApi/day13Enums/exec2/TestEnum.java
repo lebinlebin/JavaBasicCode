@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13.exec2;
+package Java.lebin.Training.JavaCoreApi.day13Enums.exec2;
 /*
  * 创建一个Color枚举类，
 1)有 RED,BLUE,BLACK,YELLOW,GREEN这个五个枚举值；

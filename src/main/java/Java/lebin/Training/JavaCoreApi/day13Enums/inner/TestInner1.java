@@ -1,7 +1,7 @@
-package Java.lebin.Training.JavaCoreApi.day13.inner;
+package Java.lebin.Training.JavaCoreApi.day13Enums.inner;
 /**
  * 此类用于演示内部类：成员内部类的特点和使用
- * @author liyuting
+ * @author liulebin
  * 特点：
  * ①类中可以有五大普通成员，不能有静态成员！（因为静态成员随着外部类的加载而加载，但成员内部类随着外部类的对象创建而加载）
  * ②可以添加任意访问修饰符，遵循访问权限限定！

@@ -16,6 +16,8 @@ package Java.lebin.Training.BasicDataTypes;/*
 */
 
 
+import java.math.BigDecimal;
+
 class DoubleTypeDemo
 {
 	public static void main(String[] args)
@@ -24,6 +26,16 @@ class DoubleTypeDemo
 
 		double d = 1.5D;
 		float f = 1.5F;
+		float ff = 0.024162294f;
+		double dd = ff;
+//		System.out.println(dd);
+//		输出结果是：127.0999984741211
+		double test = (double)ff;
+		System.out.println(test);
+
+		BigDecimal b = new BigDecimal(String.valueOf(ff));
+		double dd2 = b.doubleValue();
+		System.out.println(dd2);
 
 	}
 }

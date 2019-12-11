@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13.java8;
+package Java.lebin.Training.JavaCoreApi.day13Enums.java8;
 /**
  *  此类用于演示java8对接口的改进
  * @author liulebin
@@ -36,6 +36,7 @@ class MyClass implements A{
 		 System.out.println("我是接口中的静态方法");
 		 return a+"\t"+b;
 	}
+	@Override
 	public  void method2(String str){
 		 System.out.println("我是实现类中的方法，对接口的默认方法的重写"+str);
 	}

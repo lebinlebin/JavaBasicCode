@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13.homework;
+package Java.lebin.Training.JavaCoreApi.day13Enums.homework;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13.inner;
+package Java.lebin.Training.JavaCoreApi.day13Enums.inner;
 
 import java.util.Comparator;
 import java.util.TreeSet;
@@ -134,16 +134,9 @@ class Outer4{
 			@Override
 			public void fly() {
 				// TODO Auto-generated method stub
-				
 			}
-			
 		};
-
 		a.fly();
-		
-		
-		
-		
 	}
 }
 

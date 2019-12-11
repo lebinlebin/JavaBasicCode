@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13.inner;
+package Java.lebin.Training.JavaCoreApi.day13Enums.inner;
 /**
  * 此类用于演示内部类：局部内部类的特点和使用
  * @author liulebin

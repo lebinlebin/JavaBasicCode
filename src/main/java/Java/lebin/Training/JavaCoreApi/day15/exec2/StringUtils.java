@@ -51,13 +51,7 @@ public class StringUtils {
 		for(int i=substring.length()-1;i>=0;i--){
 			first+=substring.charAt(i);
 		}
-		
-		
 		return first+last;
-		
-		
-		
-		
 	}
 
 }

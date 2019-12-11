@@ -1,8 +1,8 @@
-package Java.lebin.Training.JavaCoreApi.day13.exec1;
-/*
+package Java.lebin.Training.JavaCoreApi.day13Enums.exec1;
+/**
  * 有一个铃声接口类Bell，里面有个ring方法。
-有一个手机类Cellphone，具有闹钟功能alarmclock，参数是Bell类型，测试手机类的闹钟功能，通过匿名内部类作为参数，打印：懒猪起床了。
-
+有一个手机类Cellphone，具有闹钟功能alarmclock，参数是Bell类型，
+测试手机类的闹钟功能，通过匿名内部类作为参数，打印：懒猪起床了。
  */
 public class TestInner2 {
 	public static void main(String[] args) {
