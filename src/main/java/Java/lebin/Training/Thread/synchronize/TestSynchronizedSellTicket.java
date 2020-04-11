@@ -1,10 +1,15 @@
 package Java.lebin.Training.Thread.synchronize;
+
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
+
+import java.util.concurrent.*;
+
 /**
  * 此类用于演示线程的同步问题
  * @author liulebin
  *
  */
-public class TestSynchronized1 {
+public class TestSynchronizedSellTicket {
 	
 	public static void main(String[] args) {
 		SellTicket2 s = new SellTicket2();
@@ -20,9 +25,17 @@ public class TestSynchronized1 {
 		Thread t3 = new Thread(s);
 		t3.setName("窗口C");
 		t3.start();
-		
-		
-		
+
+		/**
+		 * 线程池方法
+		 */
+		ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build();
+		ExecutorService singleThreadPool = new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS,
+				new LinkedBlockingQueue<Runnable>(1024), namedThreadFactory, new ThreadPoolExecutor.AbortPolicy());
+
+		singleThreadPool.execute(()-> System.out.println(Thread.currentThread().getName()));
+		singleThreadPool.shutdown();
+
 	}
 
 }
@@ -60,7 +73,7 @@ class SellTicket implements Runnable{
 		@Override
 		public void run() {
 			while(true){
-				// 普通同步方法，锁对象：this
+				// 普通同步方法，锁对象：this//锁对象要求多个线程使用的锁对象必须是同一个。
 				synchronized (this) {
 					if (tickets <= 0) {
 						System.out.println("票已经售完！");

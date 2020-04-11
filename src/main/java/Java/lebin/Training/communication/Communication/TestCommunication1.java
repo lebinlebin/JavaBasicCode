@@ -1,6 +1,4 @@
-package Java.lebin.Training.Thread.Communication;
-
-import javax.swing.plaf.synth.SynthColorChooserUI;
+package Java.lebin.Training.communication.Communication;
 
 /**
  * 此类用于演示线程的通信

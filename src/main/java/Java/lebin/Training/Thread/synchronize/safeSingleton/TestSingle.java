@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.safeSingleton;
+package Java.lebin.Training.Thread.synchronize.safeSingleton;
 
 //import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
 
@@ -63,7 +63,10 @@ class Single{
 	
 	//3、提供public static方法，暴露该对象
 	public static Single getInstance(){
-		if(single == null){//提高效率
+		if(single == null){
+			//这个if判断用于提高效率,
+			// 否则每次调用都要进入代码块中的判断锁的状态。效率低。
+			//因为当对象single已经创建后，就不需要判断锁状态，直接reture该对象即可。
 			synchronized (Single.class){//当前类的字节码对象
 				if(single == null){//线程安全
 					try {
@@ -94,6 +97,8 @@ class Single2{
 		if(single == null){//提高效率
 			try {
 				Thread.sleep(50);
+				//挂起后，可能其他线程抢占进入判断(single == null)仍然成立，
+				// 从而运行到这个位置
 				}catch (InterruptedException e){
 						e.printStackTrace();
 				}

@@ -63,8 +63,9 @@
 ###方式一：继承Thread
 
 定义线程类：
+
 	class MyThread extends Thread{
-	
+	    //无返回，无参
 		public void run(){
 	
 			//编写新线程要执行的任务体
@@ -74,12 +75,14 @@
 
 
 创建新线程，并启动
+
 	new MyThread().start();
 
 
 ###方式二：实现Runnable
 
 定义任务类：
+
 	class MyRunnable implements Runnable{
 
 		public void run(){
@@ -89,6 +92,7 @@
 	
 
 创建新线程，并启动
+
 	new Thread(new MyRunnable()).start();
 	
 

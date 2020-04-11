@@ -12,16 +12,17 @@ package Java.lebin.Training.Thread.ThreadPriorityLYieldJoinInterrupt;
 public class ThreadYieldAndJoin {
 	
 	public static void main(String[] args) {
-		
+
+		//线程中主要做了字符串的拼接，打印字符串拼接的耗时长短
 		YieldDemo yd = new YieldDemo();
-		yd.start();
+		yd.start();//礼让应该比不礼让耗时间
 		
 		JoinDemo jd = new JoinDemo();
 		jd.start();
 
 		for(int i=1; i <= 500; i++){
 			System.out.println("马兰伟在买包子~~"+i);
-			if( i>= 5){
+			if(i>= 5){
 				try {
 					jd.join();//让jd线程插队在当前线程前面去，先执行
 				} catch (InterruptedException e) {

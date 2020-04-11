@@ -4,7 +4,9 @@ package Java.lebin.Training.Thread.ThreadPriorityLYieldJoinInterrupt;
  * @author liulebin
  * setPriority:设置优先级 1_10  
  * getPriority：获取优先级
- *
+ *优先级数值越大，优先级越高
+ * main的优先级是5
+ * 具备优先权的线程不一定先执行完。只是优先权高的先完成的概率较大。
  */
 public class multiTreadPriorityDemo {
 	

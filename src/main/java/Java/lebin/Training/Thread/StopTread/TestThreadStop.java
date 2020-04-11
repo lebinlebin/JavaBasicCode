@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.TreadCall;
+package Java.lebin.Training.Thread.StopTread;
 /**
  * 此类用于演示线程的停止
  * @author liulebin
@@ -14,7 +14,8 @@ package Java.lebin.Training.Thread.TreadCall;
 public class TestThreadStop {
 	
 	public static void main(String[] args) {
-
+		
+		
 		StopThread st = new StopThread();
 		st.start();
 		for(int i=1;i<=100;i++){
@@ -37,8 +38,12 @@ class StopThread extends Thread{
 	
 	@Override
 	public void run() {
+		
 		while(flag){
+			
 			System.out.println("肖强和小黄约会ing,O(∩_∩)O哈哈~");
+			
+			
 		}
 	}
 	/*
@@ -47,4 +52,6 @@ class StopThread extends Thread{
 	public void setFlag(boolean flag){
 		this.flag=flag;
 	}
+	
+	
 }

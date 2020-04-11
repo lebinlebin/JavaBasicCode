@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.TreadCall;
+package Java.lebin.Training.Thread.TreadAndRunnable;
 
 /**
  * 此类用于演示线程的创建并启动
@@ -12,8 +12,7 @@ public class TestThreadStart {
 		//创建子线程1
 		A a = new A();
 		a.start();
-		
-		
+
 		//创建子线程2
 		new Thread(new B()).start();
 	}
@@ -39,6 +38,7 @@ class A extends Thread{
 }
 
 class B implements Runnable{
+	@Override
 	public void run() {
 	    //编写新线程的任务体
 		for(int i=1;i<=100;i++){

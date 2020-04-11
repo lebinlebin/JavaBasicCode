@@ -1,12 +1,12 @@
 package Java.lebin.Training.Thread.synchronize;
 
 //1.打印1——100，通过两个线程，实现一一交替
-public class homework2 {
+public class AlternatePrintingSyn {
 	public static void main(String[] args) {
 		Print p=new Print();
-		Thread t1=new Thread(p);
+		Thread t1 = new Thread(p);
 		t1.setName("进程1");
-		Thread t2=new Thread(p);
+		Thread t2 = new Thread(p);
 		t2.setName("进程2");
 		t1.start();
 		t2.start();

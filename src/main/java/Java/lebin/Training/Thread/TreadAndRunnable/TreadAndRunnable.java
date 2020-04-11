@@ -53,15 +53,23 @@ package Java.lebin.Training.Thread.TreadAndRunnable;
  * 第2个线程每隔400ms激活一次，令类属性x自加0.1并输出显示。
  */
 public class TreadAndRunnable {
-    static double x=0; //定义一个浮点型变量并赋值
+
+    //定义一个浮点型变量并赋值
+    static double x=0;
+
     public static void main(String[] args){
-        Thread a=new Thread(new ACThread());//创建一个新的线程
-        Thread b=new Thread(new BCThread());//创建一个新的线程
-        System.out.println("初值："+x);//显示x初值是0
+        //创建一个新的线程
+        Thread a = new Thread(new ACThread());
+        //创建一个新的线程
+        Thread b = new Thread(new BCThread());
+
+        //显示x初值是0
+        System.out.println("初值："+x);
         a.start();
         b.start();
     }
     public static class ACThread implements Runnable{
+        @Override
         public void run(){
             try{
                 while(true){
@@ -75,6 +83,7 @@ public class TreadAndRunnable {
         }
     }
     public static class BCThread implements Runnable{
+        @Override
         public void run(){
             try{
                 while(true){

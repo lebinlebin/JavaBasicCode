@@ -1,6 +1,7 @@
-package Java.lebin.Training.Thread.deletFileDirLoop;
+package Java.lebin.Training.FileSys.File.deletFileDirLoop;
 
 import java.io.File;
+import java.math.BigInteger;
 
 /**
  * 使用递归实现，删除一个指定目录（不管里面有无子级）
@@ -10,11 +11,11 @@ import java.io.File;
 public class TestHomework {
 	
 	public static void main(String[] args) {
-		
+		System.out.println(factorial(new BigInteger("100")));
 //		File file = new File("E:\\demo");
 //		
 //		deleteDirectory(file);
-		System.out.println(jiecheng(100));
+		System.out.println(jiecheng(20));
 		
 	}
 
@@ -33,10 +34,21 @@ public class TestHomework {
 		}
 	}
 	
-	public static long jiecheng(int num){
-		if(num==1)
-			return 1;
-		return num*jiecheng(num-1);
+	public static Long  jiecheng(int num){
+		if(num==1){
+			return 1L;
+		}else {
+			return num*jiecheng(num-1);
+		}
+
+	}
+
+
+	public static BigInteger factorial(BigInteger num) {
+		if (num.equals(BigInteger.ONE) || num.equals(BigInteger.ZERO))
+			return BigInteger.ONE;
+		return num.multiply((factorial(num.subtract(BigInteger.ONE ))));
+
 	}
 
 }

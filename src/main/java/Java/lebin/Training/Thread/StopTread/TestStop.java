@@ -6,7 +6,6 @@ import java.util.Scanner;
  * 
 在main方法中创建并启动两个线程。
 第一个线程循环随机打印100以内的整数，直到第二个线程从键盘读取了“Q”命令。
-
  * @author liulebin
  *
  */
@@ -14,7 +13,8 @@ public class TestStop {
 	
 	public static void main(String[] args) {
 		MyThread1 m1 = new MyThread1();
-		MyThread2 m2 = new MyThread2(m1);
+		//用MyThread1的对象调用
+		MyThread2 m2 = new MyThread2(m1);//通过构造器传参，传给 MyThread2，构造全局变量
 		m1.start();
 		m2.start();
 		
@@ -51,6 +51,7 @@ class MyThread2 extends Thread{
 class MyThread1 extends Thread{
 	boolean flag =true;
 	
+	@Override
 	public void run() {
 		
 		while(flag){

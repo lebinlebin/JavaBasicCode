@@ -1,4 +1,4 @@
-package Java.lebin.Training.Thread.Communication;
+package Java.lebin.Training.communication.Communication;
 
 
 /**
