@@ -1,4 +1,4 @@
-package Java.lebin.Training.FileSys.generic;
+package Java.lebin.Training.generic;
 /**
  * 此类用于演示自定义泛型方法
  * @author liyuting

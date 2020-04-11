@@ -1,4 +1,4 @@
-package Java.lebin.Training.FileSys.exec.io;
+package Java.lebin.Training.FileSys.io;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -23,9 +23,9 @@ public class TestCopyPic {
 		FileInputStream fis = null;
 		FileOutputStream fos = null;
 		try {
-			fis = new FileInputStream("E:\\beauty\\cang.jpg");
+			fis = new FileInputStream("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/beauty.jpg");
 			
-			fos = new FileOutputStream("src\\beauty.jpg");
+			fos = new FileOutputStream("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/beautycopyed.jpg");
 			
 			//2.读写
 			

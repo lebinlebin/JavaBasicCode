@@ -1,7 +1,6 @@
-package Java.lebin.Training.FileSys.io3;
+package Java.lebin.Training.FileSys.ioSerializable;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -33,7 +32,7 @@ public class TestObjectIO {
 	@Test
 	public void test1() throws IOException {
 		//1.创建对象
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src\\object.dat"));
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/object.dat"));
 		//2.写入
 		oos.writeInt(100);//写入四个字节
 		oos.writeChar('n');//写入2个字节
@@ -47,7 +46,7 @@ public class TestObjectIO {
 	@Test
 	public void test2() throws  IOException, ClassNotFoundException {
 		
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("src\\object.dat"));
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/object.dat"));
 		
 		System.out.println(ois.readInt());
 		System.out.println(ois.readChar());

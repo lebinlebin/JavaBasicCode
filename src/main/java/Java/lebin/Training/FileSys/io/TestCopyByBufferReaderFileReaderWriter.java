@@ -1,4 +1,4 @@
-package Java.lebin.Training.FileSys.exec.io;
+package Java.lebin.Training.FileSys.io;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,13 +11,13 @@ import java.io.IOException;
  * @author liulebin
  *
  */
-public class TestCopyByBuffer {
+public class TestCopyByBufferReaderFileReaderWriter {
 	
 	public static void main(String[] args) throws IOException {
 		
 		//1.创建流对象
-		BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\liyuting\\Desktop\\0308\\day16\\测试题15.txt"));
-		BufferedWriter writer = new BufferedWriter(new  FileWriter("src\\copy.txt"));
+		BufferedReader reader = new BufferedReader(new FileReader("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/toBecopy.txt"));
+		BufferedWriter writer = new BufferedWriter(new  FileWriter("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/copy.txt"));
 		
 		
 		//2.读写

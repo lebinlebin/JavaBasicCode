@@ -1,4 +1,4 @@
-package Java.lebin.Training.FileSys.exec.io;
+package Java.lebin.Training.FileSys.io;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -7,19 +7,19 @@ import java.io.IOException;
 
 /**
  * 此类用于演示复制文本文件
- * @author liyuting
+ * @author liulebin
  *
  */
-public class TestCopyTxt {
+public class TestCopyTxtFileReaderFileWriter {
 	
 	public static void main(String[] args) {
 		FileReader reader =null;
 		FileWriter writer = null;
 		try {
 			//1.创建流对象
-			 reader = new FileReader("C:\\Users\\liyuting\\Desktop\\0308\\day16\\测试题15.txt");
+			 reader = new FileReader("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/toBecopy.txt");
 			
-			 writer = new FileWriter("questions.txt");
+			 writer = new FileWriter("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/copy2.txt");
 			 
 			//2.读写
 				

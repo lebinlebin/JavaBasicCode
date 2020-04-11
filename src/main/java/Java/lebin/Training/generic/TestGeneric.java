@@ -1,4 +1,4 @@
-package Java.lebin.Training.FileSys.generic;
+package Java.lebin.Training.generic;
 
 import java.util.ArrayList;
 import java.util.Collection;

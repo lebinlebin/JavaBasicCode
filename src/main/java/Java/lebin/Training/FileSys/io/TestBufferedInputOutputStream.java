@@ -1,4 +1,4 @@
-package Java.lebin.Training.FileSys.io2;
+package Java.lebin.Training.FileSys.io;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -9,18 +9,19 @@ import java.io.IOException;
 
 /**
  * 此类用于演示BufferedInputStream和BufferedOutputStream的特点和使用
- * @author liyuting
- *
+ * 读取图片和输出图片
+ * @author liulebin
+ *BufferedOutputStream追加形式
  */
-public class TestBuffered1 {
+public class TestBufferedInputOutputStream {
 	
 	public static void main(String[] args) throws IOException {
 		
 		//1.创建流对象
 		BufferedInputStream bis =
-				new BufferedInputStream(new FileInputStream("E:\\beauty\\2.jpg"));
+				new BufferedInputStream(new FileInputStream("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/beauty.jpg"));
 		BufferedOutputStream bos =
-				new BufferedOutputStream(new FileOutputStream("copy.jpg"));
+				new BufferedOutputStream(new FileOutputStream("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/copy.jpg"));
 		
 		
 		//2.读写

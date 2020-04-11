@@ -11,8 +11,10 @@ public class TestHashSet {
 
 		set.add(p1);
 		set.add(p2);
+
 		p1.name = "CC";
 		System.out.println(set.remove(p1));//先将待删除的元素的哈希值（p1:1001 CC的哈希值2000  2）
+
 		System.out.println(set); //1001 CC   1002 BB
 		set.add(new Person(1001,"CC"));//将待添加的元素1001 CC的哈希值获取，并判断处索引
 		System.out.println(set);//1001 CC  1002 BB  1001 CC

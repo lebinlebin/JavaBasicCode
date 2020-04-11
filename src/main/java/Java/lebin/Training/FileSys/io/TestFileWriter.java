@@ -11,7 +11,7 @@ public class TestFileWriter {
 	public static void main(String[] args) throws IOException {
 
 		//1.创建FileWriter对象
-		FileWriter writer = new FileWriter("Filedata/names.txt",true);//覆盖
+		FileWriter writer = new FileWriter("/Users/liulebin/Documents/codeing/JAVA_SCALA_PYTHON_LEARNING/JavaBasicCode/Filedata/names.txt",true);//覆盖
 
 		//2.写入
 		writer.write("zhong");
