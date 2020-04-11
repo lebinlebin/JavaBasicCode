@@ -1,6 +1,7 @@
 package Java.lebin.Training.Thread.synchronize;
 
 //1.打印1——100，通过两个线程，实现一一交替
+//线程同步
 public class AlternatePrintingSyn {
 	public static void main(String[] args) {
 		Print p=new Print();
@@ -19,13 +20,13 @@ class Print implements Runnable{
 	public void run() {
 		synchronized (this) {			
 			while (true) {
-				notify();
+				notify();//线程激活
 				if(i>100) {
 					break;
 				}				
 				System.out.println(Thread.currentThread().getName()+"\t"+(i++));
 				try {
-					wait();
+					wait();//当前新城等待。wait的调用 会导致锁的释放
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
