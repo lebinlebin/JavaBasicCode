@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day14.homework;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.homework;
 
 import java.util.Scanner;
 
@@ -53,6 +53,15 @@ public class TestEmployee {
 class HourlyEmployee extends Employee{
 	private double wage;//时薪
 	private double hour;//小时数
+
+	/**
+	 * 构造函数
+	 * @param name
+	 * @param number
+	 * @param birthday
+	 * @param wage
+	 * @param hour
+	 */
 	public HourlyEmployee(String name, String number, MyDate birthday, double wage, double hour) {
 		super(name, number, birthday);
 		this.wage = wage;
@@ -115,6 +124,7 @@ abstract class Employee{
 	private String number;
 	private MyDate birthday;
 	public abstract double earnings();//抽象方法
+	@Override
 	public String toString(){
 		return name+"的工号："+number+",生日："+birthday.toDateString();
 	}
