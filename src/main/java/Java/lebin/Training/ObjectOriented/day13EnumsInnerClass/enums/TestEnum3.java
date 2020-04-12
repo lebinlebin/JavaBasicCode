@@ -1,5 +1,5 @@
 
-package Java.lebin.Training.JavaCoreApi.day13Enums.enums;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.enums;
 
 /**
  * 此类用于演示枚举类的常见方法
@@ -29,6 +29,7 @@ public class TestEnum3 {
 
 }
 enum Color2{
+	/**/
 	RED(255,0,0),
 	BLUE(0,0,255),
 	BLACK(0,0,0),
@@ -52,7 +53,8 @@ enum Color2{
 		this.blueValue = blueValue;
 	}
 	
-//	public String toString(){
-//		return redValue+"\t"+greenValue+"\t"+blueValue;
-//	}
+	@Override
+	public String toString(){
+		return redValue+"\t"+greenValue+"\t"+blueValue;
+	}
 }

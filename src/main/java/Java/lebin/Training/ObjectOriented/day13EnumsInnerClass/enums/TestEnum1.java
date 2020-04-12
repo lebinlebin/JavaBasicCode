@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.enums;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.enums;
 /**
  * 此类用于演示使用传统的方式创建枚举
  * @author liulebin

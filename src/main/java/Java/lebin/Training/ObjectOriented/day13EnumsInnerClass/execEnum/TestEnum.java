@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.exec2;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.execEnum;
 /*
  * 创建一个Color枚举类，
 1)有 RED,BLUE,BLACK,YELLOW,GREEN这个五个枚举值；
@@ -17,7 +17,7 @@ public class TestEnum {
 
 
 enum Color{
-	
+	/**/
 	RED(255,0,0),
 	BLUE(0,0,255),
 	BLACK(0,0,0),
@@ -35,6 +35,7 @@ enum Color{
 	}
 	private int greenValue;
 	private int blueValue;
+	/*构造器私有*/
 	private Color(int redValue, int greenValue, int blueValue) {
 		this.redValue = redValue;
 		this.greenValue = greenValue;

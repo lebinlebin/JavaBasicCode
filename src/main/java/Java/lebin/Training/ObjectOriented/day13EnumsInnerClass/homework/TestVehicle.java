@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.homework;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.homework;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 创建交通工具工厂类，有两个方法分别获得交通工具Horse和Boat；有Person类，有name和Vehicles属性，
  * 
  * 在构造器中为两个属性赋值，实例化Person对象“唐僧”，要求一般情况下用Horse作为交通工具，遇到大河时用Boat作为交通工具。
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestVehicle {
@@ -47,6 +47,7 @@ class Person{
 }
 
 class Factory{
+	/*与类的成员无关，定位为static*/
 	public static Vehicles getHorse(){
 		return new Horse();
 	}
@@ -56,6 +57,7 @@ class Factory{
 	
 }
 class Boat implements Vehicles{
+	@Override
 	public String work(){
 		return "使用船过河";
 		
@@ -63,6 +65,7 @@ class Boat implements Vehicles{
 	
 }
 class Horse implements Vehicles{
+	@Override
 	public String work(){
 		return "骑着白龙马上路啦";
 		

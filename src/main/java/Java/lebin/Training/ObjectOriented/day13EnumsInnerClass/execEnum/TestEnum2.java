@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.exec2;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.execEnum;
 /*
  * 
  * 声明Week枚举类，其中包含星期一至星期日的定义；
@@ -30,7 +30,7 @@ public class TestEnum2 {
 
 }
 enum Week{
-	
+	/**/
 	MONDAY(1),
 	TUESDAY(2),
 	WEDNESDAY(3),

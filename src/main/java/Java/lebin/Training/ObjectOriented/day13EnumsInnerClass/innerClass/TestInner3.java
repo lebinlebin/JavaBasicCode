@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.inner;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.innerClass;
 /**
  * 此类用于演示内部类：局部内部类的特点和使用
  * @author liulebin
@@ -23,6 +23,11 @@ package Java.lebin.Training.JavaCoreApi.day13Enums.inner;
  *
  */
 public class TestInner3 {
+	public static void main(String[] args) {
+		Outer3 outer3 = new Outer3();
+		outer3.print();
+//		new outer3
+	}
 
 }
 
@@ -30,17 +35,15 @@ class Outer3{
 	
 	private String name;
 	public void print(){
-//		new Inner3().show();
+//		new Inner3().show();//无法访问
 		Object x = method();
-		
+		System.out.println(x);
 		
 	}
 	public Object method(){
 		 int  age =99;
-			
 		 class Inner3{
 			 private String color;
-			
 			public void show(){
 //				System.out.println(name);
 //				name="john";
@@ -49,10 +52,13 @@ class Outer3{
 			}
 			
 		}
+		/**
+		 * 外部类————>内部类
+		 * 只能在作用域范围内，通过创建对象并访问(包含私有的！)
+		 * 语法：new Inner（）.方法();
+		 */
 		 Inner3 i = new Inner3();
 		 i.show();
 		 return i;
 	}
-	
-	
 }

@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.inner;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.innerClass;
 /**
  * 此类用于演示内部类：静态内部类的特点和使用
  * @author liulebin
@@ -36,19 +36,10 @@ class Outer2{
 		private  int age;
 		public void show(){
 			System.out.println(Outer2.name);
-			
 		}
-		static{
-			
-		}
-		public Inner2(){
-			
-		}
-		static class InnerInner{
-			
-		}
-		
-		
+		static{}
+		public Inner2(){}
+		static class InnerInner{}
 	}
 	//外部类的方法
 	public void method(){

@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.exec1;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.execinner;
 /*
  * 有一个Car类，有属性temperature（温度），车内有Air（空调）类，
  * 

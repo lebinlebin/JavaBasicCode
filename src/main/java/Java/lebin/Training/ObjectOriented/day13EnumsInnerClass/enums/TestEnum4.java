@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.enums;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.enums;
 /**
  * 此类用于演示枚举类实现接口
  * @author liulebin
@@ -42,6 +42,7 @@ interface Show{
 	void display();
 }
 enum Color4 implements Show{
+	/**/
 	RED(255,0,0){
 		@Override
 		public void display(){

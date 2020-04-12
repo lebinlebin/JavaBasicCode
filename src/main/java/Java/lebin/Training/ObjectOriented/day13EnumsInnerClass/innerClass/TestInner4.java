@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.inner;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.innerClass;
 
 import java.util.Comparator;
 import java.util.TreeSet;
@@ -53,24 +53,19 @@ import java.util.TreeSet;
  *  
  */
 public class TestInner4 {
-
-	
 	public static void main(String[] args) {
-//		method(new Fly());
-//		method(new MyClass());//方式一：传统的方式
+//		method(new Fly());//不能执行
+		method(new MyClass());//方式一：传统的方式
+		//方式二：匿名内部类
 		method(new Fly(){
-
 			@Override
 			public void fly() {
 				System.out.println("我要飞啊飞");
-				
 			}
-			
 		});
 		
-		//代表示例1：
+		//代表示例1：  传递参数为一个接口； Comparator为一个接口
 		TreeSet set = new TreeSet(new Comparator(){
-
 			@Override
 			public int compare(Object o1, Object o2) {
 				// TODO Auto-generated method stub
@@ -81,13 +76,10 @@ public class TestInner4 {
 		
 		//代表示例2：
 		Thread t= new Thread(new Runnable(){
-
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				
 			}
-			
 		});
 		
 		
@@ -95,41 +87,29 @@ public class TestInner4 {
 	
 	public static void method(Fly a){
 		a.fly();
-		
-		
 	}
 }
-//class MyClass implements Fly{
-//
-//	@Override
-//	public void fly() {
-//		
-//	}
-//	
-//}
+class MyClass implements Fly{
+	@Override
+	public void fly() {
+
+	}
+
+}
 class Outer4{
-	
-	
 	private String name;
-	
-	
 	public void method(){
-		
 		int i=999;
 		//定义匿名内部类
 		Fly a =new Fly(){
-			
 			class Inner{}
 			 String color;
-			
 			public void show(){
 				System.out.println(name);
 				System.out.println(i);
 //				i++;
-				
 			}
 			{
-				
 			}
 			@Override
 			public void fly() {

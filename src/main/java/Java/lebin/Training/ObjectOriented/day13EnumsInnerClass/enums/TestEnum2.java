@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day13Enums.enums;
+package Java.lebin.Training.ObjectOriented.day13EnumsInnerClass.enums;
 /**
  * 此类用于演示使用enum关键字定义枚举类【掌握】
  * @author liulebin
@@ -52,5 +52,4 @@ enum Season2{
 enum Gender2{
 	//2.本类内部创建一组对象，添加public static修饰符，直接暴露对象
 		BOY,GIRL;
-	
 }
