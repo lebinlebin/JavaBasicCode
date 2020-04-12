@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day14.exception;
+package Java.lebin.Training.Exception;
 /**
  * 此类用于演示子类重写父类方法时对异常类型的要求
  * @author liyuting

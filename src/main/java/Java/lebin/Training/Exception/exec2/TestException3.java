@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day14.exec2;
+package Java.lebin.Training.Exception.exec2;
 /*
  * 编写应用程序EcmDef.java，接收命令行的两个参数，计算两数相除。
 	对数据类型不一致(NumberFormatException)、缺少命令行参数(ArrayIndexOutOfBoundsException、两个数不能是负数

@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day14.exception;
+package Java.lebin.Training.Exception;
 /*
  * 此类用于演示异常处理的方式二：抛
  */

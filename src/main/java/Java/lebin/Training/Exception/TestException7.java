@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day14.exception;
+package Java.lebin.Training.Exception;
 
 import java.util.Scanner;
 

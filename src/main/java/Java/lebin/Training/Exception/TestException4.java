@@ -1,4 +1,4 @@
-package Java.lebin.Training.JavaCoreApi.day14.exception;
+package Java.lebin.Training.Exception;
 
 import java.util.Scanner;
 
@@ -40,7 +40,6 @@ public class TestException4 {
 		}catch(NullPointerException e){
 			System.out.println("空指针了吧");
 		}catch(Exception e){
-			
 			System.out.println("下标越界吧");
 		}finally{//最后一定要执行的语句
 			System.out.println("try catch块后面的语句");
