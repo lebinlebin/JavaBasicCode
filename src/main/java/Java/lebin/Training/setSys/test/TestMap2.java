@@ -11,7 +11,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示Map接口的遍历方式
- * @author liyuting
+ * @author liulebin
  * 
  * 
 方式一：通过调用entrySet

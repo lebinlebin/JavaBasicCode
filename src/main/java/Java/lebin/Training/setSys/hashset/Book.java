@@ -90,6 +90,7 @@ public class Book{
 		this.author = author;
 	}
 	
+	@Override
 	public String toString(){
 		/*
 		 * %s：字符串

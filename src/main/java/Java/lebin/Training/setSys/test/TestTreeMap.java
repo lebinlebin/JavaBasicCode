@@ -17,7 +17,7 @@ import Java.lebin.Training.setSys.test.Employee;
 
 要求：先对员工的编号排序，然后再按工资排序
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestTreeMap {

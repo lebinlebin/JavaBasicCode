@@ -9,9 +9,9 @@ import java.util.Set;
 public class Test3 {
 	public static void main(String[] args) {		
 	Set set=new HashSet();
-	set.add(new Student("�ܴ�","2018.4.2"));
-	set.add(new Student("�ܶ�","2018.4.4"));
-	set.add(new Student("�ܶ�","2018.4.4"));
+	set.add(new Student("小明","2018.4.2"));
+	set.add(new Student("小红","2018.4.4"));
+	set.add(new Student("小李","2018.4.4"));
 	Iterator iterator=set.iterator();
 	while(iterator.hasNext())	{
 		System.out.println(iterator.next());

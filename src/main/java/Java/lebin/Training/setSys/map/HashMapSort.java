@@ -1,8 +1,6 @@
 package Java.lebin.Training.setSys.map;
 
 import java.util.*;
-
-//Author:Hibiki last modified in 2018.10.04
 public class HashMapSort {
 
 	public static void main(String[] args) {
@@ -18,11 +16,12 @@ public class HashMapSort {
 		//key-sort
 		Set set = phone.keySet();
 		Object[] arr = set.toArray();
+
 		Arrays.sort(arr);
 		for (Object key : arr) {
 			System.out.println(key + ": " + phone.get(key));
 		}
-		System.out.println();
+		System.out.println("----------------------------------");
 
 
 		/**

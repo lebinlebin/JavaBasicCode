@@ -18,7 +18,7 @@ import Java.lebin.Training.setSys.test.Employee;
 
 要求：先对员工的编号排序，然后再按工资排序
 
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestTreeMap {
@@ -28,21 +28,20 @@ public class TestTreeMap {
 		//1.创建TreeMap对象
 		TreeMap map = new TreeMap();
 		
-		//2.添加元素
-		map.put(new Employee("任我行",1000,1), 1000);
+		//2.添加元素 Employee类，compareTo方法，在treeMap中可以直接按照 顺序打印元素
 		map.put(new Employee("岳不群",3000,2), 3000);
 
 		map.put(new Employee("岳灵珊",300,3), 300);
 		map.put(new Employee("林平之",8,4), 8);
 		map.put(new Employee("依琳",900,3), 300);
 		
-		//3.遍历元素
+		//3.遍历元素  自然排序
 		Set entrys = map.entrySet();
 		
 		for (Object object : entrys) {
 			Entry entry = (Entry) object;
 			
-			System.out.println(entry.getKey());
+			System.out.println("--->  "+entry.getKey());
 		}
 	}
 	

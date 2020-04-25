@@ -18,15 +18,12 @@ import org.junit.Test;
  * 
  *
  */
-public class TestList1 {
+public class TestList2ArrayList {
 	
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		//1.创建List接口的对象
-		
 		List list = new ArrayList();
-		
-		
 		//2.调用添加
 		list.add("john");
 		list.add("lucy");
@@ -55,11 +52,9 @@ public class TestList1 {
 		System.out.println(list.indexOf("张益达"));
 		
 		//特有方法5：get(index)获取
-		System.out.println(list.get(30));
+		System.out.println(list.get(3));
 		
-		
-		
-		
+
 		//3.遍历
 		
 		System.out.println(list);
@@ -79,6 +74,7 @@ public class TestList1 {
 		 * 细节：如果元素类型为整型，如果删除的实参为int类型，默认是按索引删除；
 		 * 如果想按指定元素删除，则需要装箱再删除！
 		 */
+		list.remove(200);
 		list.remove(new Integer(100));
 		System.out.println(list);
 

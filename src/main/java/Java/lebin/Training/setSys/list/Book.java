@@ -30,6 +30,7 @@ public class Book implements Comparable{
 		this.author = author;
 	}
 	
+	@Override
 	public String toString(){
 		/*
 		 * %s：字符串

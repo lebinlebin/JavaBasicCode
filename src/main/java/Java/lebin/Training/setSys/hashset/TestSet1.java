@@ -25,11 +25,11 @@ public class TestSet1 {
 		set.add("john");
 		
 		set.add("rose");
-//		set.add(null);
+		set.add(null);
 		
 		//3.遍历
 		
-//		System.out.println(set);
+		System.out.println(set);
 		
 //		CollectionUtils.print1(set);
 		CollectionUtils.print2(set);

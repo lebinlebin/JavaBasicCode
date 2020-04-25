@@ -31,6 +31,7 @@ public class Book implements Comparable{
 		this.author = author;
 	}
 	
+	@Override
 	public String toString(){
 		/*
 		 * %s：字符串
@@ -44,7 +45,6 @@ public class Book implements Comparable{
 
 	@Override
 	public int compareTo(Object o) {
-		
 		Book b = (Book) o;
 		return Double.compare(this.price, b.price);
 	}

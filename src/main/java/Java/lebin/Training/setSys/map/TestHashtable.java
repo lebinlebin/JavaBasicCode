@@ -4,7 +4,10 @@ import java.util.Hashtable;
 
 public class TestHashtable {
 
-	
+	/**
+	 * hashTable不允许null值
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		Hashtable table = new Hashtable();

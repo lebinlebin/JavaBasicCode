@@ -43,26 +43,16 @@ public class TestCollections {
 	//方法1：reverse
 	@Test
 	public void test1() {
-		
-		
-		
 		Collections.reverse(list);
-		
 		//遍历打印
 		CollectionUtils.print1(list);
-		
 	}
 	//方法2：shuffle
 	@Test
 	public void test2() {
-		
-		
-		
 		Collections.shuffle(list);
-		
 		//遍历打印
 		CollectionUtils.print1(list);
-		
 	}
 	//方法3：sort(list)
 	@Test

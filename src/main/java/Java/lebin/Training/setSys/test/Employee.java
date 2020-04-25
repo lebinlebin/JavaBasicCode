@@ -36,6 +36,12 @@ public class Employee implements Comparable{
 		this.salary = salary;
 		this.id = id;
 	}
+
+	/**compareTo方法，在treeMap中可以直接按照 顺序打印元素
+	 * 实现了
+	 * @param o
+	 * @return
+	 */
 	@Override
 	public int compareTo(Object o) {
 		Employee e=(Employee) o;

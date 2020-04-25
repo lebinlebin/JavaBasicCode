@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 /**
  * 此类用于演示HashMap的底层结构和源码分析
- * @author liyuting
+ * @author liulebin
  *
  */
 
