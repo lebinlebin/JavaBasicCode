@@ -8,7 +8,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示泛型的好处
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestGeneric1 {
@@ -26,12 +26,9 @@ public class TestGeneric1 {
 		Iterator iterator = list.iterator();
 		//不足2：遍历时，需要向下转型
 		while (iterator.hasNext()) {
-			String	 object = (String) iterator.next();
-			
+			String	object = (String) iterator.next();
 			System.out.println(object.length());
-			
 		}
-
 	}
 	
 	//使用泛型之后
@@ -43,19 +40,13 @@ public class TestGeneric1 {
 		list.add("lucy");
 		list.add("john");
 //		list.add(100);
-		
-		
+
 		//好处2：不需要向下转型，提高效率
 		Iterator<String> iterator = list.iterator();
 		while (iterator.hasNext()) {
 			String string = iterator.next();
 			System.out.println(string.length());
-			
-			
 		}
-		
-		
-				
 	}
 
 }

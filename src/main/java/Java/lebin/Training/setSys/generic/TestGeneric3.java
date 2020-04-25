@@ -4,7 +4,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示自定义泛型
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestGeneric3 {

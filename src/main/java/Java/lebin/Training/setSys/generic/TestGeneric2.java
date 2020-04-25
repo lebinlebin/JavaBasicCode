@@ -18,7 +18,7 @@ import Java.lebin.Training.setSys.utils.CollectionUtils;
 
 /**
  * 此类用于演示泛型的语法和使用
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestGeneric2 {
@@ -36,8 +36,6 @@ public class TestGeneric2 {
 		set.add(100);
 //		set.add("");
 		Iterator<Integer> iterator = set.iterator();
-		
-		
 	}
 	
 	//测试map
