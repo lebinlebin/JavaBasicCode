@@ -28,7 +28,7 @@ public class TestLambda1 {
 //		},"hello");
 //		
 		
-		System.out.println(method( str->str.toUpperCase(),"hello"));
+		System.out.println(method(str->str.toUpperCase(),"hello"));
 
 	}
 	

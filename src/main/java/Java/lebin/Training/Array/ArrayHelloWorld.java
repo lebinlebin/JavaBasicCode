@@ -6,10 +6,7 @@ package Java.lebin.Training.Array;
 */
 
 
-
-
-class ArrayDemo1
-{
+class ArrayDemo1 {
 
 
     public static void main(String[] args)
@@ -33,6 +30,8 @@ class ArrayDemo1
 
 		*/
         arr = new int[5];
+
+
 
         Double[] WeightRange = new Double[2];
         Double a =  WeightRange[0];
@@ -65,7 +64,7 @@ class ArrayDemo1
 }
 
 //此类用于演示数组的动态初始化——赋的值有规律
-class ArrayDemo1_2
+class ArrayDemo
 {
 
 

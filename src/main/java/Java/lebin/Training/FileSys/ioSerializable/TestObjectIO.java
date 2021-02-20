@@ -38,7 +38,7 @@ public class TestObjectIO {
 		oos.writeChar('n');//写入2个字节
 		oos.writeBoolean(true);
 		oos.writeUTF("张三丰");
-		oos.writeObject(new Person("john"));
+		oos.writeObject(new Person2("john"));
 		//3.关闭
 		oos.close();
 	}
@@ -58,9 +58,9 @@ public class TestObjectIO {
 
 }
 
-class Person implements Serializable{
+class Person2 implements Serializable{
 	String name;
-	public Person(String name) {
+	public Person2(String name) {
 		super();
 		this.name = name;
 	}

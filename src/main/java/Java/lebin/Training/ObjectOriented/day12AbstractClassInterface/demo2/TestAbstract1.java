@@ -7,7 +7,7 @@ package Java.lebin.Training.ObjectOriented.day12AbstractClassInterface.demo2;
  * ①抽象类不能创建本类的对象
  * ②抽象类有构造器，供子类调用
  * ③抽象类中可以有哪些成员？
- * 任意成员（包含普通成员和抽象方法）
+ * 	 任意成员（包含普通成员和抽象方法）
  * ④抽象类中也可以没有抽象方法
  * ⑤不能使用final修饰抽象类，因为和继承的意义相悖
  * 

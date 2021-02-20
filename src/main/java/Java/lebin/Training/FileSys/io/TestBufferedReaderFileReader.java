@@ -10,6 +10,7 @@ import java.io.IOException;
  * @author liulebin
  *
  * 注意：多了readLine方法，功能：读取一行文本，如果到文件末尾返回null
+ * 必须和节点流FileReader结合使用
  */
 public class TestBufferedReaderFileReader {
 

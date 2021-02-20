@@ -1,7 +1,7 @@
 package Java.lebin.Training.Exception;
 /**
  * 此类用于演示常见的运行异常
- * @author liyuting
+ * @author liulebin
  *
  */
 public class TestException2 {

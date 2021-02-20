@@ -7,7 +7,7 @@ package Java.lebin.Training.ObjectOriented.day11staticAndSingleton.demo2StaticMe
 public class TestSatic1 {
 
 }
- class A{
+class A{
 	
 	static String name;
 //	public static  A() {//不能修饰构造器

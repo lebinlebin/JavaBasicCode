@@ -32,6 +32,7 @@ public class MainFrame extends JFrame {
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
+			@Override
 			public void run() {
 				try {
 					MainFrame frame = new MainFrame();
@@ -67,6 +68,7 @@ public class MainFrame extends JFrame {
 
 		JButton button = new JButton("点 名");
 		button.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				//重新位置
 				if(seat!=null) seat.notHighLight();

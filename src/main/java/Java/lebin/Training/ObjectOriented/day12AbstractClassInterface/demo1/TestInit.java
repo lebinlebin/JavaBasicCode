@@ -27,8 +27,6 @@ class InitDemo{
 	}
 	
 	public InitDemo(){
-		
-		
 	}
 
 	

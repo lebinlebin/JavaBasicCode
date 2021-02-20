@@ -1,16 +1,16 @@
 package Java.lebin.Training.Thread.synchronize;
 /*
- * 模拟银行取钱的问题
+模拟银行取钱的问题
 1.定义一个Account类
 1）该Account类封装了账户编号（String）和余额（double）两个属性
 2）设置相应属性的getter和setter方法
 3）提供无参和有两个参数的构造器
 Deposit, Withdraw 两个线程
 
-// 再写存钱线程和取钱线程
-// 取钱线程不断取钱, 每次取1000以内随机的钱,如果不够,则等待
-// 存钱线程也不断存钱,每次存1000以内随机的钱,存完以后,通知取钱线程,并睡眠2秒钟
-// 余额不允许出现0或负数.
+ 再写存钱线程和取钱线程
+ 取钱线程不断取钱, 每次取1000以内随机的钱,如果不够,则等待
+ 存钱线程也不断存钱,每次存1000以内随机的钱,存完以后,通知取钱线程,并睡眠2秒钟
+ 余额不允许出现0或负数.
 
  */
 public class TestCommunication {
@@ -36,7 +36,6 @@ class WithDraw1 extends Thread{
 	@Override
 	public void run() {
 		while(true){
-					
 			synchronized (acc) {
 				int money = (int) (Math.random() * 1001);
 				while (money >= acc.getMoney()) {
@@ -66,7 +65,6 @@ class Deposit extends Thread{
 	public void run() {
 		
 		while(true){
-			
 			synchronized (acc) {
 				int money = (int) (Math.random() * 1001);
 				acc.setMoney(acc.getMoney() + money);
@@ -115,8 +113,4 @@ class Account{
 	public void setMoney(double money) {
 		this.money = money;
 	}
-	
-	
-	
-	
 }

@@ -63,6 +63,7 @@ class Person{
 		this.name = name;
 		this.nation=nation;
 	}
+	@Override
 	public String toString(){
 		return name+"\t"+nation;
 	}

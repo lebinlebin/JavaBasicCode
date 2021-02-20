@@ -8,7 +8,7 @@ import org.junit.Test;
 
 /**
  * 此类用于演示通过反射观察泛型的本质
- * @author liyuting
+ * @author liulebin
  * 
  * 特点：泛型只保留在编译期间
  * 
@@ -48,13 +48,6 @@ public class TestReflect {
 		Method method = c.getMethod("add", Object.class);
 		
 		method.invoke(list2, "john");
-		
-		
-		
-		
-		
-		
-
 	}
 
 }

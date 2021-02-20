@@ -27,6 +27,7 @@ public class Seat extends JPanel {
 		this.repaint();
 	}
 	
+	@Override
 	public String getName(){
 		return label.getText();
 	}

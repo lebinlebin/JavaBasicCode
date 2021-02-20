@@ -12,6 +12,7 @@ import java.io.IOException;
  * 读取图片和输出图片
  * @author liulebin
  *BufferedOutputStream追加形式
+ * 必须和节点流配合使用
  */
 public class TestBufferedInputOutputStream {
 	

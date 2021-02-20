@@ -23,7 +23,6 @@ class ArraySum
         //1.打印
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]);
-
         }
         //2.求和
         int sum = 0;

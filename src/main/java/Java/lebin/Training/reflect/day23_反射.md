@@ -49,9 +49,9 @@
 	//使用反射
 
 	public void method(Object o){
-		
+		//通过反射创建对象
 		Object obj = o.getClass().newInstance();
-		
+		//通过反射调用方法
 		o.getClass().getMethod("work").invoke();
 	}
 
@@ -65,12 +65,10 @@
 
 
 案例2：
+
 	method("john");
 	public<T> void method(T t){
-
 		t.getClass();
-		
-
 	}
 
 
@@ -97,12 +95,9 @@
 
 	There is a class named Class;
 	
-	
-	
 	class Person{
 		String name;
 		public void method(){}
-	
 	}
 	
 	class Student{
