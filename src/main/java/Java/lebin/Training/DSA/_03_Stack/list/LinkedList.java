@@ -1,14 +1,15 @@
-package Java.lebin.Training.DSA._2_LinkedList.circle;
+package Java.lebin.Training.DSA._03_Stack.list;
 
-import Java.lebin.Training.DSA._2_LinkedList.AbstractList;
-
-public class SingleCircleLinkedList<E> extends AbstractList<E> {
+public class LinkedList<E> extends AbstractList<E> {
 	private Node<E> first;
+	private Node<E> last;
 	
 	private static class Node<E> {
 		E element;
+		Node<E> prev;
 		Node<E> next;
-		public Node(E element, Node<E> next) {
+		public Node(Node<E> prev, E element, Node<E> next) {
+			this.prev = prev;
 			this.element = element;
 			this.next = next;
 		}
@@ -16,7 +17,21 @@ public class SingleCircleLinkedList<E> extends AbstractList<E> {
 		@Override
 		public String toString() {
 			StringBuilder sb = new StringBuilder();
-			sb.append(element).append("_").append(next.element);
+			
+			if (prev != null) {
+				sb.append(prev.element);
+			} else {
+				sb.append("null");
+			}
+			
+			sb.append("_").append(element).append("_");
+
+			if (next != null) {
+				sb.append(next.element);
+			} else {
+				sb.append("null");
+			}
+			
 			return sb.toString();
 		}
 	}
@@ -25,6 +40,7 @@ public class SingleCircleLinkedList<E> extends AbstractList<E> {
 	public void clear() {
 		size = 0;
 		first = null;
+		last = null;
 	}
 
 	@Override
@@ -43,38 +59,53 @@ public class SingleCircleLinkedList<E> extends AbstractList<E> {
 	@Override
 	public void add(int index, E element) {
 		rangeCheckForAdd(index);
-		
-		if (index == 0) {
-			Node<E> newFirst = new Node<>(element, first);
-			// 拿到最后一个节点
-			Node<E> last = (size == 0) ? newFirst : node(size - 1);
-			last.next = newFirst;
-			first = newFirst;
+
+		// size == 0
+		// index == 0
+		if (index == size) { // 往最后面添加元素
+			Node<E> oldLast = last;
+			last = new Node<>(oldLast, element, null);
+			if (oldLast == null) { // 这是链表添加的第一个元素
+				first = last;
+			} else {
+				oldLast.next = last;
+			}
 		} else {
-			Node<E> prev = node(index - 1);
-			prev.next = new Node<>(element, prev.next);
+			Node<E> next = node(index); 
+			Node<E> prev = next.prev; 
+			Node<E> node = new Node<>(prev, element, next);
+			next.prev = node;
+			
+			if (prev == null) { // index == 0
+				first = node;
+			} else {
+				prev.next = node;
+			}
 		}
+		
 		size++;
 	}
 
 	@Override
 	public E remove(int index) {
 		rangeCheck(index);
+
+		Node<E> node = node(index);
+		Node<E> prev = node.prev;
+		Node<E> next = node.next;
 		
-		Node<E> node = first;
-		if (index == 0) {
-			if (size == 1) {
-				first = null;
-			} else {
-				Node<E> last = node(size - 1);
-				first = first.next;
-				last.next = first;
-			}
+		if (prev == null) { // index == 0
+			first = next;
 		} else {
-			Node<E> prev = node(index - 1);
-			node = prev.next;
-			prev.next = node.next;
+			prev.next = next;
 		}
+		
+		if (next == null) { // index == size - 1
+			last = prev;
+		} else {
+			next.prev = prev;
+		}
+		
 		size--;
 		return node.element;
 	}
@@ -107,12 +138,19 @@ public class SingleCircleLinkedList<E> extends AbstractList<E> {
 	private Node<E> node(int index) {
 		rangeCheck(index);
 		
-		Node<E> node = first;
-		for (int i = 0; i < index; i++) {
-			node = node.next;
+		if (index < (size >> 1)) {
+			Node<E> node = first;
+			for (int i = 0; i < index; i++) {
+				node = node.next;
+			}
+			return node;
+		} else {
+			Node<E> node = last;
+			for (int i = size - 1; i > index; i--) {
+				node = node.prev;
+			}
+			return node;
 		}
-		
-		return node;
 	}
 	
 	@Override

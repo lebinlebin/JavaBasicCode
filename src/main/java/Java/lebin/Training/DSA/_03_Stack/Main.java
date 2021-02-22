@@ -1,4 +1,4 @@
-package Java.lebin.Training.DSA.Stack;
+package Java.lebin.Training.DSA._03_Stack;
 public class Main {
 
 	public static void main(String[] args) {

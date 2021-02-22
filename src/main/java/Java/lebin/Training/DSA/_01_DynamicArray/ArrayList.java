@@ -1,4 +1,4 @@
-package Java.lebin.Training.DSA._1_DynamicArray;
+package Java.lebin.Training.DSA._01_DynamicArray;
 
 
 public class ArrayList<E> {

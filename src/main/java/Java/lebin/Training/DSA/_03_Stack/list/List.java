@@ -1,4 +1,4 @@
-package  Java.lebin.Training.DSA.Stack.list;
+package  Java.lebin.Training.DSA._03_Stack.list;
 
 public interface List<E> {
 	static final int ELEMENT_NOT_FOUND = -1;

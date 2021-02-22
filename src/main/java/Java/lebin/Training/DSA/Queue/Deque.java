@@ -1,7 +1,7 @@
 package Java.lebin.Training.DSA.Queue;
 
-import Java.lebin.Training.DSA.Stack.list.LinkedList;
-import Java.lebin.Training.DSA.Stack.list.List;
+import Java.lebin.Training.DSA._03_Stack.list.LinkedList;
+import Java.lebin.Training.DSA._03_Stack.list.List;
 
 public class Deque<E> {
 	private List<E> list = new LinkedList<>();

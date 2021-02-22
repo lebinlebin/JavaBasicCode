@@ -1,4 +1,4 @@
-package Java.lebin.Training.DSA.Stack.list;
+package Java.lebin.Training.DSA._02_LinkedList;
 
 @SuppressWarnings("unchecked")
 public class ArrayList<E> extends AbstractList<E> {

@@ -1,7 +1,7 @@
-package Java.lebin.Training.DSA.Stack;
+package Java.lebin.Training.DSA._03_Stack;
 
-import Java.lebin.Training.DSA.Stack.list.ArrayList;
-import Java.lebin.Training.DSA.Stack.list.List;
+import Java.lebin.Training.DSA._03_Stack.list.ArrayList;
+import Java.lebin.Training.DSA._03_Stack.list.List;
 
 public class Stack<E> {
 	private List<E> list = new ArrayList<>();

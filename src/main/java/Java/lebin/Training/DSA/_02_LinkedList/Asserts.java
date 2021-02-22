@@ -1,4 +1,4 @@
-package Java.lebin.Training.DSA._2_LinkedList;
+package Java.lebin.Training.DSA._02_LinkedList;
 
 public class Asserts {
 	public static void test(boolean value) {
