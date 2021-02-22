@@ -1,4 +1,4 @@
-package Java.lebin.Training.DSA.LinkedList;
+package Java.lebin.Training.DSA._2_LinkedList;
 
 public interface List<E> {
 	static final int ELEMENT_NOT_FOUND = -1;

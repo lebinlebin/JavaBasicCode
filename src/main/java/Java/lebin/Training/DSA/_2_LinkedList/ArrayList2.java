@@ -1,5 +1,4 @@
-package Java.lebin.Training.DSA.LinkedList;
-
+package Java.lebin.Training.DSA._2_LinkedList;
 @SuppressWarnings("unchecked")
 
 /**

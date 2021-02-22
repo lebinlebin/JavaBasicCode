@@ -1,4 +1,4 @@
-package Java.lebin.Training.DSA.LinkedList;
+package Java.lebin.Training.DSA._1_DynamicArray;
 
 public class Asserts {
 	public static void test(boolean value) {
