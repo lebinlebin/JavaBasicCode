@@ -1,7 +1,7 @@
 package Java.lebin.Training.DSA._02_LinkedList.circle;
 
 import Java.lebin.Training.DSA._02_LinkedList.AbstractList;
-
+//单向循环链表
 public class SingleCircleLinkedList<E> extends AbstractList<E> {
 	private Node<E> first;
 	

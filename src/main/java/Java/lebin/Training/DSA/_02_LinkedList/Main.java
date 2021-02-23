@@ -1,6 +1,7 @@
 package Java.lebin.Training.DSA._02_LinkedList;
 
 import Java.lebin.Training.DSA._02_LinkedList.circle.CircleLinkedList;
+import Java.lebin.Training.DSA._02_LinkedList.circle.SingleCircleLinkedList;
 
 public class Main {
 	
@@ -47,13 +48,13 @@ public class Main {
 	public static void main(String[] args) {
 		josephus();
 		
-//		testList(new ArrayList<>());
-//		testList(new LinkedList<>());
+		testList(new ArrayList<>());
+		testList(new LinkedList<>());
 		
 		
-		// testList(new SingleCircleLinkedList<>());
+		 testList(new SingleCircleLinkedList<>());
 		
-		// testList(new CircleLinkedList<>());
+		 testList(new CircleLinkedList<>());
 		
 		/*
 		 * gc root对象

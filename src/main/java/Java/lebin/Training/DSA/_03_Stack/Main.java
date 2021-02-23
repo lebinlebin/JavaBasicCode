@@ -7,10 +7,8 @@ public class Main {
 		stack.push(22);
 		stack.push(33);
 		stack.push(44);
-		
 		while (!stack.isEmpty()) {
 			System.out.println(stack.pop());
 		}
 	}
-
 }
